@@ -10,19 +10,13 @@
 import SwiftUI
 
 struct ContentView: View {
-    
     var body: some View {
-  
-        
         VStack {
-            
-            
             VStack{
+                
                 ForEach(accounts){
                     account in
-                    
-                    Text("\(account.type)")
-                }
+                        
                 //testing to see if the data load correctly
                //Top card
                 VStack {
@@ -33,10 +27,10 @@ struct ContentView: View {
                     // account card
                     VStack(alignment: .leading){
                         HStack{
-                            Text("Westpac Choice")
+                            Text("\(account.type)")
                                 .fontWeight(.regular)
                             Spacer()
-                            Text("$50,000")
+                                 Text("\(account.balance)")
                                 .fontWeight(.semibold)
                         }
                         .padding(.bottom,4)
@@ -44,7 +38,7 @@ struct ContentView: View {
                         //.frame(maxWidth: .infinity, alignment: .leading)
                         // added alignment on Vstack - code efficiency
                         
-                        Text("Card ending in ...1234")
+                        Text("Card ending in ...\(account.num)")
                             .modifier(TextGray())
                         
                     }
@@ -59,7 +53,7 @@ struct ContentView: View {
                 .padding(.bottom, 8)
                 
                 BottomCard()
- 
+                }
             }
             .background(Color.white)
             .cornerRadius(3)

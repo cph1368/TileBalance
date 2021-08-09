@@ -11,12 +11,15 @@
 
 import Foundation
 
-//need to import swift ui in swift file, otherwise wont work
+//IMPORTANT : due to XCODE - v11 need to import swift ui in swift file, otherwise wont work
 import SwiftUI
 
-//need to include : Hashable, Codable, Identifiable{
+//IMPORTANT : due to XCODE - v11 need to include : Hashable, Codable, Identifiable{
 struct Account: Hashable, Codable, Identifiable{
     var id: Int
     var type: String
+    var balance: String
+    var q1: String
+    var btn1: String
     var num: Int
 }

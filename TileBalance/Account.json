@@ -3,6 +3,9 @@
     {
         "id": 1,
         "type": "Westpac Choice",
+        "balance": "$50,000",
+        "q1": "How is your Offset helping you save?",
+        "btn1": "Explore",
         "num": 1204
 
     }
