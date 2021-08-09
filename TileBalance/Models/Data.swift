@@ -8,9 +8,6 @@
 
 import Foundation
 
-//var tileContent: [Account] = load("tileContent.json")
-//var account: [Account] = load("Account.json")
-
 var accounts:[Account] = load("Account.json")
 
 
