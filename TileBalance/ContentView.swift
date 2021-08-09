@@ -18,6 +18,11 @@ struct ContentView: View {
             
             
             VStack{
+                ForEach(accounts){
+                    account in
+                    
+                    Text("\(account.type)")
+                }
                 //testing to see if the data load correctly
                //Top card
                 VStack {
