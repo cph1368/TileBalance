@@ -22,15 +22,19 @@ struct ContentView: View {
                 
                 VStack(alignment: .leading){
                     
+                    
                     Text("Hi John, we need more information from you")
                         .fontWeight(.bold)
                         .modifier(Header0())
                         .padding(.bottom)
+                        .fixedSize(horizontal: false, vertical: true)
+                        // NEED TO ADD FIXED SIZE TO AVOID TEXT TRUNCATING
                     
                     Text("Provide your employment details to help us better protect you")
+                       .fixedSize(horizontal: false, vertical: true)
+                        // NEED TO ADD FIXED SIZE TO AVOID TEXT TRUNCATING
                     
-                    
-                    Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
+                    Button(action:{}) {
                         Text("Things you should know")
                     }
                     .padding(.vertical)
