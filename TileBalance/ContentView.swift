@@ -21,18 +21,17 @@ struct ContentView: View {
                     .font(.system(size: 78))
                 
                 VStack(alignment: .leading){
-                    
-                    
                     Text("Hi John, we need more information from you")
                         .fontWeight(.bold)
                         .modifier(Header0())
                         .padding(.bottom)
                         .fixedSize(horizontal: false, vertical: true)
-                        // NEED TO ADD FIXED SIZE TO AVOID TEXT TRUNCATING
+                    // Adding fixedSize to AVOID TEXT TRUNCATING in smaller device
                     
                     Text("Provide your employment details to help us better protect you")
-                       .fixedSize(horizontal: false, vertical: true)
-                        // NEED TO ADD FIXED SIZE TO AVOID TEXT TRUNCATING
+                    .modifier(Header2())
+                        .padding(.bottom)
+                        .fixedSize(horizontal: false, vertical: true)
                     
                     Button(action:{}) {
                         Text("Things you should know")
