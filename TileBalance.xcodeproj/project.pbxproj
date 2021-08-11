@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		640FA6AD26C3CCFF009548F5 /* TileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640FA6AC26C3CCFF009548F5 /* TileView.swift */; };
 		645DA8F926C177DF00C4E149 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645DA8F826C177DF00C4E149 /* AppDelegate.swift */; };
 		645DA8FB26C177DF00C4E149 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645DA8FA26C177DF00C4E149 /* SceneDelegate.swift */; };
 		645DA8FD26C177DF00C4E149 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645DA8FC26C177DF00C4E149 /* ContentView.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		640FA6AC26C3CCFF009548F5 /* TileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileView.swift; sourceTree = "<group>"; };
 		645DA8F526C177DF00C4E149 /* TileBalance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TileBalance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		645DA8F826C177DF00C4E149 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		645DA8FA26C177DF00C4E149 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 				645DA91226C17A0F00C4E149 /* Models */,
 				64BA8F2326C184E100ACEBAC /* Views */,
 				645DA8FC26C177DF00C4E149 /* ContentView.swift */,
+				640FA6AC26C3CCFF009548F5 /* TileView.swift */,
 				64BA8F2426C184FC00ACEBAC /* Resources */,
 				645DA8FE26C177E000C4E149 /* Assets.xcassets */,
 				645DA90326C177E000C4E149 /* LaunchScreen.storyboard */,
@@ -193,6 +196,7 @@
 				645DA90F26C1786200C4E149 /* BottomCard.swift in Sources */,
 				645DA8FB26C177DF00C4E149 /* SceneDelegate.swift in Sources */,
 				645DA8FD26C177DF00C4E149 /* ContentView.swift in Sources */,
+				640FA6AD26C3CCFF009548F5 /* TileView.swift in Sources */,
 				645DA90D26C1783400C4E149 /* TopSection.swift in Sources */,
 				645DA91A26C17CF800C4E149 /* Account.swift in Sources */,
 				645DA91126C1789000C4E149 /* TextStyleGuide.swift in Sources */,
