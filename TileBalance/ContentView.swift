@@ -13,7 +13,6 @@ struct ContentView: View {
     var body: some View {
         
         VStack(alignment:.leading){
-            
             Spacer()
              //ADDING PROFILE TOP SECTION
             VStack(alignment: .leading){
@@ -47,7 +46,6 @@ struct ContentView: View {
             .padding(32)
             
             Spacer()
-            
             //ADDING BUTTONS CODE
             VStack{
                 Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
