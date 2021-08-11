@@ -12,9 +12,10 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         
-        VStack(alignment: .leading){
+        VStack(alignment:.leading){
             
             Spacer()
+             //ADDING PROFILE TOP SECTION
             VStack(alignment: .leading){
                 Image(systemName: "person.circle.fill")
                     .foregroundColor(Color("DarkGray"))
@@ -46,6 +47,8 @@ struct ContentView: View {
             .padding(32)
             
             Spacer()
+            
+            //ADDING BUTTONS CODE
             VStack{
                 Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
                     Text("Provide Details")
@@ -67,12 +70,7 @@ struct ContentView: View {
             }
             .padding()
             
-            
         }
-        
-        
-        
-        
     }
 }
 
