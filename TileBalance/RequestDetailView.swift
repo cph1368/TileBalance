@@ -12,12 +12,17 @@ struct RequestDetailView: View {
     var body: some View {
         
         VStack(alignment:.leading){
+            
             Spacer()
+            
              //ADDING PROFILE TOP SECTION
             VStack(alignment: .leading){
                 Image(systemName: "person.circle.fill")
                     .foregroundColor(Color("DarkGray"))
                     .font(.system(size: 78))
+                    .padding(.bottom,8)
+                
+                //total padding 24
                 
                 VStack(alignment: .leading){
                     Text("Hi John, we need more information from you")
