@@ -8,10 +8,17 @@
 
 import SwiftUI
 
+struct Header0: ViewModifier{
+    func body(content: Content) -> some View {
+        content
+            .font(.title)
+            .foregroundColor(Color("Dark"))
+    }
+}
 struct Header1: ViewModifier{
     func body(content: Content) -> some View {
         content
-            .font(.body)
+             .font(.body)
             .foregroundColor(Color("Blue"))
     }
 }
@@ -50,6 +57,8 @@ struct TextRed: ViewModifier{
 struct TextStyleGuide: View {
     var body: some View {
         VStack{
+            Text("Title Style Blue")
+                .modifier(Header0())
             Text("Title Style Blue")
                 .modifier(Header1())
             
