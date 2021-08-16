@@ -14,12 +14,15 @@ struct ContentView: View {
         
         NavigationView {
             List {
-                NavigationLink(destination: TileView()) {
-                    Text("Westpac Balance Tile")
+                Section(header: Text("Key Screens")){
+                    NavigationLink(destination: TileView()) {
+                                       Text("Westpac Balance Tile")
+                                   }
+                                   NavigationLink(destination: RequestDetailView()) {
+                                       Text("Provide Info Screen")
+                                   }
                 }
-                NavigationLink(destination: RequestDetailView()) {
-                    Text("Provide Info Screen")
-                }
+               
             }
             .padding(.top,24)
             .navigationBarTitle("Components")
