@@ -11,30 +11,24 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            NavigationView {
-                ScrollView {
-                    ZStack {
-                        RoundedRectangle(cornerRadius: 30)
-                            .frame(height: 1000)
-                            .padding()
-                        List {
-                            NavigationLink(destination: TileView()) {
-                                Text("Westpac Balance Tile")
-                            }
-                            NavigationLink(destination: RequestDetailView()) {
-                                Text("Provide Info Screen")
-                            }
-                        }
-                    }
-                    .navigationBarTitle("Components")
-                    
+        
+        NavigationView {
+            List {
+                NavigationLink(destination: TileView()) {
+                    Text("Westpac Balance Tile")
                 }
-                .padding()
-                
+                NavigationLink(destination: RequestDetailView()) {
+                    Text("Provide Info Screen")
+                }
             }
-                
+            .padding(.top,24)
+            .navigationBarTitle("Components")
+            
         }
+    .padding(32)
+    
+
+        
     }
     
     struct ContentView_Previews: PreviewProvider {
