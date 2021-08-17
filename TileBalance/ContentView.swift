@@ -16,21 +16,21 @@ struct ContentView: View {
             List {
                 Section(header: Text("Templates")){
                     NavigationLink(destination: TileView()) {
-                                       Text("Westpac Balance Tile")
-                                   }
-                                   NavigationLink(destination: RequestDetailView()) {
-                                       Text("Provide Info Screen")
-                                   }
+                        Text("Westpac Balance Tile")
+                    }
+                    NavigationLink(destination: RequestDetailView()) {
+                        Text("Provide Info Screen")
+                    }
                 }
-               
+                
             }
             .padding(.top,24)
             .navigationBarTitle("Components")
             
         }
-    .padding()
-    
-
+        .padding()
+        
+        
         
     }
     
