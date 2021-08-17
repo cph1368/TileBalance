@@ -14,7 +14,7 @@ struct ContentView: View {
         
         NavigationView {
             List {
-                Section(header: Text("Key Screens")){
+                Section(header: Text("Templates")){
                     NavigationLink(destination: TileView()) {
                                        Text("Westpac Balance Tile")
                                    }
@@ -28,7 +28,7 @@ struct ContentView: View {
             .navigationBarTitle("Components")
             
         }
-    .padding(32)
+    .padding()
     
 
         

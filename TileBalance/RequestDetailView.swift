@@ -17,14 +17,16 @@ struct RequestDetailView: View {
             
              //ADDING PROFILE TOP SECTION
             VStack(alignment: .leading){
-                Image(systemName: "person.circle.fill")
-                    .foregroundColor(Color("DarkGray"))
-                    .font(.system(size: 78))
-                    .padding(.bottom,8)
-                
+            
                 //total padding 24
                 
                 VStack(alignment: .leading){
+                    CircleIcon()
+//                    Image(systemName: "person.circle.fill")
+//                                    .foregroundColor(Color("DarkGray"))
+//                                   .font(.system(size: 78))
+//                                  .padding(.bottom,8)
+                                   
                     Text("Hi John, we need more information from you")
                         .fontWeight(.bold)
                         .modifier(Header0())
@@ -46,7 +48,7 @@ struct RequestDetailView: View {
                 .padding(.vertical)
                 
             }
-            .frame(maxWidth: .infinity)
+           .frame(maxWidth: .infinity)
             .padding(32)
             
             Spacer()
@@ -59,6 +61,7 @@ struct RequestDetailView: View {
                 .foregroundColor(Color.white)
                 .frame(maxWidth: .infinity)
                 .background(Color("Red"))
+                .cornerRadius(3)
                 
                 
                 
@@ -66,8 +69,9 @@ struct RequestDetailView: View {
                     Text("Not now")
                 }
                 .foregroundColor(Color("Red"))
+                 .cornerRadius(3)
                 .padding()
-                .frame(maxWidth: .infinity)
+               .frame(maxWidth: .infinity)
                 
             }
             .padding()
