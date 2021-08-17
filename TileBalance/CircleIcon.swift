@@ -14,8 +14,7 @@ struct CircleIcon: View {
     
     var body: some View{
         Circle()
-            .frame(width: 78,  height: 78, alignment: .center)
-            .foregroundColor(Color("DarkGray"))
+            .iconCircle() //using extension to work on repetitive modifiers
             .overlay( Image(systemName: icon))
             .font(.system(size: 36))
             .foregroundColor(Color(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)))

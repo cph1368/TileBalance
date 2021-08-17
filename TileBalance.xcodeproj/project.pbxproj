@@ -10,6 +10,7 @@
 		640FA6AD26C3CCFF009548F5 /* TileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640FA6AC26C3CCFF009548F5 /* TileView.swift */; };
 		640FA6AF26C3F53F009548F5 /* RequestDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640FA6AE26C3F53F009548F5 /* RequestDetailView.swift */; };
 		640FA6B726C4D5C1009548F5 /* CircleIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640FA6B626C4D5C1009548F5 /* CircleIcon.swift */; };
+		644A38ED26CBF9880077F972 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644A38EC26CBF9880077F972 /* Extensions.swift */; };
 		645DA8F926C177DF00C4E149 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645DA8F826C177DF00C4E149 /* AppDelegate.swift */; };
 		645DA8FB26C177DF00C4E149 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645DA8FA26C177DF00C4E149 /* SceneDelegate.swift */; };
 		645DA8FD26C177DF00C4E149 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645DA8FC26C177DF00C4E149 /* ContentView.swift */; };
@@ -28,6 +29,7 @@
 		640FA6AC26C3CCFF009548F5 /* TileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileView.swift; sourceTree = "<group>"; };
 		640FA6AE26C3F53F009548F5 /* RequestDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestDetailView.swift; sourceTree = "<group>"; };
 		640FA6B626C4D5C1009548F5 /* CircleIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleIcon.swift; sourceTree = "<group>"; };
+		644A38EC26CBF9880077F972 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		645DA8F526C177DF00C4E149 /* TileBalance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TileBalance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		645DA8F826C177DF00C4E149 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		645DA8FA26C177DF00C4E149 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,6 +57,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		644A38EB26CBF9680077F972 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				644A38EC26CBF9880077F972 /* Extensions.swift */,
+			);
+			name = Utils;
+			path = Resources/Utils;
+			sourceTree = "<group>";
+		};
 		645DA8EC26C177DF00C4E149 = {
 			isa = PBXGroup;
 			children = (
@@ -82,6 +93,7 @@
 				640FA6B626C4D5C1009548F5 /* CircleIcon.swift */,
 				640FA6AE26C3F53F009548F5 /* RequestDetailView.swift */,
 				640FA6AC26C3CCFF009548F5 /* TileView.swift */,
+				644A38EB26CBF9680077F972 /* Utils */,
 				64BA8F2426C184FC00ACEBAC /* Resources */,
 				645DA8FE26C177E000C4E149 /* Assets.xcassets */,
 				645DA90326C177E000C4E149 /* LaunchScreen.storyboard */,
@@ -205,6 +217,7 @@
 				640FA6AD26C3CCFF009548F5 /* TileView.swift in Sources */,
 				645DA90D26C1783400C4E149 /* TopSection.swift in Sources */,
 				645DA91A26C17CF800C4E149 /* Account.swift in Sources */,
+				644A38ED26CBF9880077F972 /* Extensions.swift in Sources */,
 				645DA91126C1789000C4E149 /* TextStyleGuide.swift in Sources */,
 				640FA6B726C4D5C1009548F5 /* CircleIcon.swift in Sources */,
 				645DA91826C17C0000C4E149 /* Data.swift in Sources */,
