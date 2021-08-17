@@ -4,11 +4,12 @@
 //
 //  Created by Corry Handayani on 10/8/21.
 //  Copyright © 2021 Corry Handayani. All rights reserved.
-//
+//  used to fetch data
 
 import Foundation
 
 var accounts:[Account] = load("Account.json")
+var details:[Detail] = load("Details.json")
 
 
 func load<T: Decodable>(_ filename: String) -> T {
