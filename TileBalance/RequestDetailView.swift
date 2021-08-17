@@ -15,18 +15,15 @@ struct RequestDetailView: View {
             
             Spacer()
             
-             //ADDING PROFILE TOP SECTION
+            //ADDING PROFILE TOP SECTION
             VStack(alignment: .leading){
-            
+                
                 //total padding 24
                 
                 VStack(alignment: .leading){
                     CircleIcon()
-//                    Image(systemName: "person.circle.fill")
-//                                    .foregroundColor(Color("DarkGray"))
-//                                   .font(.system(size: 78))
-//                                  .padding(.bottom,8)
-                                   
+              
+                    
                     Text("Hi John, we need more information from you")
                         .fontWeight(.bold)
                         .modifier(Header0())
@@ -35,7 +32,7 @@ struct RequestDetailView: View {
                     // Adding fixedSize to AVOID TEXT TRUNCATING in smaller device
                     
                     Text("Provide your employment details to help us better protect you")
-                    .modifier(Header2())
+                        .modifier(Header2())
                         .padding(.bottom)
                         .fixedSize(horizontal: false, vertical: true)
                     
@@ -48,7 +45,7 @@ struct RequestDetailView: View {
                 .padding(.vertical)
                 
             }
-           .frame(maxWidth: .infinity)
+            .frame(maxWidth: .infinity)
             .padding(32)
             
             Spacer()
@@ -69,9 +66,9 @@ struct RequestDetailView: View {
                     Text("Not now")
                 }
                 .foregroundColor(Color("Red"))
-                 .cornerRadius(3)
+                .cornerRadius(3)
                 .padding()
-               .frame(maxWidth: .infinity)
+                .frame(maxWidth: .infinity)
                 
             }
             .padding()
