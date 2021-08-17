@@ -18,6 +18,7 @@ struct CircleIcon: View {
             .overlay( Image(systemName: icon))
             .font(.system(size: 36))
             .foregroundColor(Color(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)))
+              .padding(.bottom,8)
     }
     
     
