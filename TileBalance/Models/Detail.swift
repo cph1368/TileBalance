@@ -13,7 +13,6 @@ import SwiftUI
 
 struct Detail: Hashable, Codable, Identifiable{
     var id: Int
-var type: String
     var detail: String
     var desc: String
     var actionlink: String
