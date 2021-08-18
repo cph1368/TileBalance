@@ -12,7 +12,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         
-        NavigationView {
+        NavigationView {              
             List {
                 Section(header: Text("Templates")){
                     NavigationLink(destination: TileView()) {
@@ -21,6 +21,9 @@ struct ContentView: View {
                     NavigationLink(destination: RequestDetailView()) {
                         Text("Provide Info Screen")
                     }
+                    NavigationLink(destination: RequestDetailView()) {
+                                           Text("Select Account Screen")
+                                       }
                 }
                 
             }

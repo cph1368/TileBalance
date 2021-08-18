@@ -18,7 +18,7 @@ struct Header0: ViewModifier{
 struct Header1: ViewModifier{
     func body(content: Content) -> some View {
         content
-             .font(.body)
+            .font(.body)
             .foregroundColor(Color("Blue"))
     }
 }
@@ -29,6 +29,15 @@ struct Header2: ViewModifier{
             .foregroundColor(Color("Dark"))
     }
 }
+
+struct Header3: ViewModifier{
+    func body(content: Content) -> some View {
+        content
+            .font(.body)
+            .foregroundColor(Color("DarkGray"))
+    }
+}
+
 
 struct TextSmall: ViewModifier{
     func body(content: Content) -> some View {
@@ -66,6 +75,9 @@ struct TextStyleGuide: View {
                 .modifier(Header2())
             
             Text("Title Style")
+                .modifier(Header3())
+            
+            Text("Title Style")
                 .modifier(TextSmall())
             
             Text("Title Style")
@@ -73,7 +85,7 @@ struct TextStyleGuide: View {
             
             Text("Title Style")
                 .modifier(TextRed())
-
+            
         }
     }
 }
