@@ -72,7 +72,8 @@ struct SelectAccView: View {
             
             Spacer()
             //ADDING BUTTONS CODE
-            RequestBtn()
+            RequestBtn(
+            btn1: "Select Accounts", btn2: "Not Now")
             
         }    }
 }

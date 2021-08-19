@@ -9,10 +9,15 @@
 import SwiftUI
 
 struct RequestBtn: View {
+    
+      var btn1: String = "Provide Details"
+    
+     var btn2: String = "Not now"
+    
     var body: some View {
         VStack{
             Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
-                Text("Provide Details")
+                Text(btn1)
             }
             .padding()
             .foregroundColor(Color.white)
@@ -23,7 +28,7 @@ struct RequestBtn: View {
             
             
             Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
-                Text("Not now")
+                Text(btn2)
             }
             .foregroundColor(Color("Red"))
             .cornerRadius(3)
