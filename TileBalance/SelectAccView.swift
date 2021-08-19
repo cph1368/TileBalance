@@ -24,40 +24,20 @@ struct SelectAccView: View {
                 VStack(alignment: .leading){
                     CircleIcon(icon : "doc.text")
                     
-                    Text("Less paper. More")
-                        .fontWeight(.bold)
-                        .modifier(Header0())
-                    Text("protection.")
-                        .fontWeight(.bold)
-                        .modifier(Header0())
-                        .padding(.bottom)
-                    // Adding fixedSize to AVOID TEXT TRUNCATING in smaller device
+                    TitleTop()
                     
-                    Text("Go paperless with these eligible")
-                        .modifier(Header2())
-                    Text("accounts ")
-                        .modifier(Header2())
+                    TitleTop(textTitle: "protection")
                         .padding(.bottom)
                     
                     
-                    Text("Westpac Choice")
-                        .fontWeight(.bold)
-                        .modifier(Header2())
+                    DescTitle()
+                    DescTitle( desc: "accounts")
+                        .padding(.bottom)
                     
-                    Text("732-010 101010")
-                        .modifier(Header3())
-                         .padding(.top,4)
-                    
-                    VStack {
-                        Text("Westpac eSaver")
-                            .fontWeight(.bold)
-                            .modifier(Header2())
-                        
-                        Text("732-010 101010")
-                            .modifier(Header3())
-                            .padding(.top,4)
-                    }
-                    .padding(.top)
+                    AccDetail(acctype: "Westpac Choice", accnum: "732-010 101010")
+                   
+                    AccDetail()
+                        .padding(.top)
                     
                     Text("We'll email you at johnsmith@gmail.com when your eStatements are ready. You can opt out or change this address any time in eStatements settings.")
                         .modifier(TextSmall())
@@ -82,5 +62,41 @@ struct SelectAccView: View {
 struct SelectAccView_Previews: PreviewProvider {
     static var previews: some View {
         SelectAccView()
+    }
+}
+
+struct AccDetail: View {
+    var acctype: String = "Westpac eSaver"
+    var accnum: String = "732-010 202020"
+    
+    var body: some View {
+        
+        VStack {
+            Text(acctype)
+                .fontWeight(.bold)
+                .modifier(Header2())
+            
+            Text(accnum)
+                .modifier(Header3())
+                .padding(.top,4)
+        }
+    }
+}
+
+struct TitleTop: View {
+    var textTitle: String = "Less paper. More"
+    
+    var body: some View {
+        Text(textTitle)
+            .fontWeight(.bold)
+            .modifier(Header0())
+    }
+}
+
+struct DescTitle: View {
+    var desc: String = "Go paperless with these eligible"
+    var body: some View {
+        Text(desc)
+            .modifier(Header2())
     }
 }

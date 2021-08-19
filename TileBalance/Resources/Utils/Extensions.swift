@@ -14,4 +14,8 @@ extension View {
         self.frame(width: 78,  height: 78, alignment: .center)
             .foregroundColor(Color("DarkGray"))
     }
+    
+    func Header0Bold() -> some View {
+        self.modifier(Header0())
+    }
 }
