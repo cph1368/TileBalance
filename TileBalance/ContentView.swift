@@ -21,7 +21,7 @@ struct ContentView: View {
                     NavigationLink(destination: RequestDetailView()) {
                         Text("Provide Info Screen")
                     }
-                    NavigationLink(destination: RequestDetailView()) {
+                    NavigationLink(destination: SelectAccView()) {
                                            Text("Select Account Screen")
                                        }
                 }
