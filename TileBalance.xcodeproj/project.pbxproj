@@ -101,6 +101,7 @@
 				640FA6AE26C3F53F009548F5 /* RequestDetailView.swift */,
 				6429602F26CD33C200274622 /* SelectAccView.swift */,
 				640FA6AC26C3CCFF009548F5 /* TileView.swift */,
+				640FA6B626C4D5C1009548F5 /* CircleIcon.swift */,
 				644A38EB26CBF9680077F972 /* Utils */,
 				64BA8F2426C184FC00ACEBAC /* Resources */,
 				645DA8FE26C177E000C4E149 /* Assets.xcassets */,
@@ -131,7 +132,6 @@
 		64BA8F2326C184E100ACEBAC /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				640FA6B626C4D5C1009548F5 /* CircleIcon.swift */,
 				645DA91026C1789000C4E149 /* TextStyleGuide.swift */,
 				644A38F626CC092B0077F972 /* RequestBtn.swift */,
 			);
