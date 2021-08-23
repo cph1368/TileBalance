@@ -19,7 +19,19 @@ struct TileView: View {
                       //Top card
                        VStack {
                            
-                           TopSection()
+                        HStack(){
+                            Text("Offset account")
+                                .fontWeight(.semibold)
+                                .modifier(Header1())
+                           
+                            Spacer()
+                            
+                         Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
+                         Text("Edit")
+                            .modifier(TextRed())
+                         }
+                        }
+                        .padding(.bottom,8)
                     
                            //one customer may have many accounts
                            // account card
@@ -50,7 +62,33 @@ struct TileView: View {
                        .padding([.top, .leading, .trailing])
                        .padding(.bottom, 8)
                        
-                       BottomCard()
+                        HStack {
+                             //Text("How is your Offset helping you save?")
+                               Text("\(account.q1)")
+                                .modifier(TextGray())
+                                .padding(.leading)
+                            
+                            Spacer()
+                            
+                            Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
+                             //Text("Explore")
+                                Text("\(account.btn1)")
+                                                   .padding(.vertical, 5)
+                                                   .padding(.horizontal, 8)
+                                                   .background(Color.white)
+                                                   .foregroundColor(Color("Dark"))
+                                                   .font(.caption)
+                                                   .overlay(
+                                                       RoundedRectangle(cornerRadius: 3)
+                                                           .stroke(Color("Red"), lineWidth: 1))
+                            }
+                            .padding(.vertical, 8)
+                            .padding(.horizontal, 16)
+                            
+                            
+                        }
+                        .background(Color("AccentColor"))
+                        .frame(maxWidth: .infinity, alignment: .leading)
                        }
                    }
                    .background(Color.white)

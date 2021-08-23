@@ -11,27 +11,9 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        
-        NavigationView {              
-            List {
-                Section(header: Text("Templates")){
-                    NavigationLink(destination: TileView()) {
-                        Text("Westpac Balance Tile")
-                    }
-                    NavigationLink(destination: RequestDetailView()) {
-                        Text("Provide Info Screen")
-                    }
-                    NavigationLink(destination: SelectAccView()) {
-                                           Text("Select Account Screen")
-                                       }
-                }
-                
-            }
-            .padding(.top,24)
-            .navigationBarTitle("Components")
-            
-        }
-        .padding()
+        TileView()
+        RequestDetailView()
+        SelectAccView()
         
         
         
@@ -41,6 +23,8 @@ struct ContentView: View {
         static var previews: some View {
             Group {
                 ContentView()
+                    .environment(\.sizeCategory, .accessibilityExtraExtraExtraLarge)
+                    .previewDevice("iPhone 12 Pro")
                 
             }
         }
