@@ -24,22 +24,18 @@ struct SelectAccView: View {
                 VStack(alignment: .leading){
                     CircleIcon(icon : "doc.text")
                     
-                    Text("Less paper. More")
+                    Text("Less paper. More Protection")
                         .fontWeight(.bold)
                         .modifier(Header0())
-                    Text("protection.")
-                        .fontWeight(.bold)
-                        .modifier(Header0())
+                        .fixedSize(horizontal: false, vertical: true)
                         .padding(.bottom)
+                  
                     // Adding fixedSize to AVOID TEXT TRUNCATING in smaller device
                     
-                    Text("Go paperless with these eligible")
-                        .modifier(Header2())
-                    Text("accounts ")
+                    Text("Go paperless with these eligible accounts")
                         .modifier(Header2())
                         .padding(.bottom)
-                    
-                    
+               
                     Text("Westpac Choice")
                         .fontWeight(.bold)
                         .modifier(Header2())
