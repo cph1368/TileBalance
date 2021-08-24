@@ -78,5 +78,6 @@ struct SelectAccView: View {
 struct SelectAccView_Previews: PreviewProvider {
     static var previews: some View {
         SelectAccView()
+            .environment(\.sizeCategory, .extraLarge)
     }
 }

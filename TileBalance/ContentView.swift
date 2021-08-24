@@ -12,8 +12,8 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         TileView()
-        RequestDetailView()
-        SelectAccView()
+       // RequestDetailView()
+       // SelectAccView()
         
         
         
@@ -24,6 +24,9 @@ struct ContentView: View {
             Group {
                 ContentView()
                     .environment(\.sizeCategory, .accessibilityExtraExtraExtraLarge)
+                    .previewDevice("iPhone 12 Pro")
+                ContentView()
+                    .environment(\.sizeCategory, .accessibilityLarge)
                     .previewDevice("iPhone 12 Pro")
                 
             }
