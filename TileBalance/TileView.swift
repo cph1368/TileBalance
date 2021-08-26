@@ -38,13 +38,12 @@ struct TileView: View {
                             }
                             .padding(.bottom,8)
                         
-                               //one customer may have many accounts
-                               // account card
-                            
-                         //   if sizeCategory.isAccessibilityCategory{
+                      
                                VStack(alignment: .leading){
                                 
+                                //Add Size Category
                                 if sizeCategory.isAccessibilityCategory{
+                                    
                                    VStack{
                                        Text("\(account.type)")
                                            .fontWeight(.regular)
@@ -54,9 +53,10 @@ struct TileView: View {
                                            .fontWeight(.semibold)
                                         .fixedSize(horizontal: false, vertical: /*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
                                    }
-                                   .frame(maxWidth: .infinity)
+                                   .frame(maxWidth: .infinity, alignment: .leading)
                                    .padding(.bottom,4)
                                    .modifier(Header2())
+                                    
                                 } else {
                                     HStack{
                                         Text("\(account.type)")
@@ -134,5 +134,10 @@ struct TileView: View {
 struct TileView_Previews: PreviewProvider {
     static var previews: some View {
         TileView()
+            .environment(\.sizeCategory, .accessibilityExtraExtraExtraLarge)
+            .previewDevice("iPhone 12 Pro Max")
+        TileView()
+            .environment(\.sizeCategory, .large)
+            .previewDevice("iPhone 12 Pro Max")
     }
 }
