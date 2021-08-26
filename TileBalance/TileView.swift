@@ -9,9 +9,13 @@
 import SwiftUI
 
 struct TileView: View {
+    
+    @Environment(\.sizeCategory) var sizeCategory
+    
     var body: some View {
         ScrollView {
-            VStack {
+              VStack {
+             //   if sizeCategory.isAccessibilityCategory{
                        VStack {
                            ForEach(accounts){
                                account in
@@ -36,8 +40,12 @@ struct TileView: View {
                         
                                //one customer may have many accounts
                                // account card
+                            
+                         //   if sizeCategory.isAccessibilityCategory{
                                VStack(alignment: .leading){
-                                   HStack{
+                                
+                                if sizeCategory.isAccessibilityCategory{
+                                   VStack{
                                        Text("\(account.type)")
                                            .fontWeight(.regular)
                                         .fixedSize(horizontal: false, vertical: /*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
@@ -46,10 +54,22 @@ struct TileView: View {
                                            .fontWeight(.semibold)
                                         .fixedSize(horizontal: false, vertical: /*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
                                    }
+                                   .frame(maxWidth: .infinity)
                                    .padding(.bottom,4)
                                    .modifier(Header2())
-                                   //.frame(maxWidth: .infinity, alignment: .leading)
-                                   // added alignment on Vstack - code efficiency
+                                } else {
+                                    HStack{
+                                        Text("\(account.type)")
+                                            .fontWeight(.regular)
+                                         .fixedSize(horizontal: false, vertical: /*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
+                                        Spacer()
+                                             Text("\(account.balance)")
+                                            .fontWeight(.semibold)
+                                         .fixedSize(horizontal: false, vertical: /*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
+                                    }
+                                    .padding(.bottom,4)
+                                    .modifier(Header2())
+                                }
                                    
                                    Text("Card ending in ...\(account.num)")
                                        .modifier(TextGray())
