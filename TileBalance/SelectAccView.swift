@@ -63,7 +63,17 @@ struct SelectAccView: View {
                     //.accessibilityElement(children: .combine)
                     .accessibilityElement(children: .ignore)
                     .accessibility(label: Text("Westpac esaver here"))
-                    //using accessibilty element ignore and replacing it with the label 
+                    //using accessibilty element ignore and replacing it with the label
+                    
+                    //Using Value as value might change depending on data
+                    //.accessibility(value: Text("\(ammount))"))
+                    
+                    //Using Accessibility add traits .isbutton to identify image as button
+                    //.accessibility(addTraits: .isButton)
+                    //.accessibility(removeTraits: .isImage)
+                    
+                    //Using accessibility hidden bollean to hide content such as image
+                    //.accessibility(hidden: true)X
                     
                     .padding(.top)
                     
