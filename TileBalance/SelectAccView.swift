@@ -23,6 +23,9 @@ struct SelectAccView: View {
                 
                 VStack(alignment: .leading){
                     CircleIcon(icon : "doc.text")
+                    //.accessiility(hidden: true)
+                    
+                    
                     
                     Text("Less paper. More Protection")
                         .fontWeight(.bold)
@@ -44,6 +47,10 @@ struct SelectAccView: View {
                         .modifier(Header3())
                          .padding(.top,4)
                     
+                    
+                    // if we want to combine how accessibility reader reads this
+                    // then it has to be group in VStack
+                    
                     VStack {
                         Text("Westpac eSaver")
                             .fontWeight(.bold)
@@ -53,6 +60,11 @@ struct SelectAccView: View {
                             .modifier(Header3())
                             .padding(.top,4)
                     }
+                    //.accessibilityElement(children: .combine)
+                    .accessibilityElement(children: .ignore)
+                    .accessibility(label: Text("Westpac esaver here"))
+                    //using accessibilty element ignore and replacing it with the label 
+                    
                     .padding(.top)
                     
                     Text("We'll email you at johnsmith@gmail.com when your eStatements are ready. You can opt out or change this address any time in eStatements settings.")
