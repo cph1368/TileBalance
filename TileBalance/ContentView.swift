@@ -19,8 +19,8 @@ struct ContentView: View {
            //TileView2()
         
            //RequestDetailView()
-        
-            SelectAccView()
+            TileView()
+          //  SelectAccView()
            
         }
    
@@ -32,6 +32,7 @@ struct ContentView: View {
         static var previews: some View {
             Group {
                 ContentView()
+                    .environment(\.sizeCategory, .accessibilityExtraExtraExtraLarge)
                     .previewDevice("iPhone 12 Pro Max")
                 
               //  RequestDetailView()

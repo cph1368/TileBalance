@@ -10,8 +10,16 @@ import SwiftUI
 
 struct TileView: View {
     
-    @Environment(\.sizeCategory) var sizeCategory
+  //  @Environment(\.sizeCategory) var sizeCategory
+    @Environment(\.sizeCategory) var sizeCategory: ContentSizeCategory
     
+    let largeSizeCategories: [ContentSizeCategory] = [.extraExtraLarge,
+                                                          .extraExtraExtraLarge,
+                                                          .accessibilityMedium,
+                                                          .accessibilityLarge,
+                                                          .accessibilityExtraLarge,
+                                                          .accessibilityExtraExtraLarge,
+                                                          .accessibilityExtraExtraExtraLarge]
     var body: some View {
         ScrollView {
               VStack {
@@ -42,7 +50,8 @@ struct TileView: View {
                                VStack(alignment: .leading){
                                 
                                 //Add Size Category
-                                if sizeCategory.isAccessibilityCategory{
+                               // if sizeCategory.isAccessibilityCategory{
+                                if largeSizeCategories.contains(sizeCategory){
                                     
                                    VStack{
                                        Text("\(account.type)")
@@ -90,7 +99,7 @@ struct TileView: View {
                            
                             
                             
-                            if sizeCategory.isAccessibilityCategory{
+                            if largeSizeCategories.contains(sizeCategory){
                                 VStack {
                                      //Text("How is your Offset helping you save?")
                                        Text("\(account.q1)")
