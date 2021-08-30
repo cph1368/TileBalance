@@ -115,7 +115,6 @@ struct TileView: View {
                                     
                                     
                                 }
-                                .background(Color("AccentColor"))
                                 .frame(maxWidth: .infinity, alignment: .leading)
                                
                             } else{
@@ -144,7 +143,6 @@ struct TileView: View {
                                     
                                     
                                 }
-                                .background(Color("AccentColor"))
                                 .frame(maxWidth: .infinity, alignment: .leading)
                                 
                                 

@@ -16,7 +16,7 @@ struct ContentView: View {
    
         ScrollView{
             
-           TileView()
+           TileView2()
         
            //RequestDetailView()
         
@@ -32,11 +32,11 @@ struct ContentView: View {
         static var previews: some View {
             Group {
                 ContentView()
-                    .environment(\.sizeCategory, .accessibilityExtraExtraExtraLarge)
                     .previewDevice("iPhone 12 Pro Max")
-                RequestDetailView()
-                    .environment(\.sizeCategory, .accessibilityExtraExtraExtraLarge)
-                    .previewDevice("iPhone 12 Pro")
+                
+              //  RequestDetailView()
+                //    .environment(\.sizeCategory, .accessibilityExtraExtraExtraLarge)
+                //    .previewDevice("iPhone 12 Pro")
                 
             }
         }

@@ -26,6 +26,7 @@
 		645DA91826C17C0000C4E149 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645DA91726C17C0000C4E149 /* Data.swift */; };
 		645DA91A26C17CF800C4E149 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645DA91926C17CF800C4E149 /* Account.swift */; };
 		649F310826D383A3006B8551 /* ComponentList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649F310726D383A3006B8551 /* ComponentList.swift */; };
+		64CB519326DD03AA00E3D589 /* TileView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64CB519226DD03AA00E3D589 /* TileView2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		645DA91726C17C0000C4E149 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		645DA91926C17CF800C4E149 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		649F310726D383A3006B8551 /* ComponentList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentList.swift; sourceTree = "<group>"; };
+		64CB519226DD03AA00E3D589 /* TileView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileView2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 				640FA6AE26C3F53F009548F5 /* RequestDetailView.swift */,
 				6429602F26CD33C200274622 /* SelectAccView.swift */,
 				640FA6AC26C3CCFF009548F5 /* TileView.swift */,
+				64CB519226DD03AA00E3D589 /* TileView2.swift */,
 				640FA6B626C4D5C1009548F5 /* CircleIcon.swift */,
 				644A38EB26CBF9680077F972 /* Utils */,
 				64BA8F2426C184FC00ACEBAC /* Resources */,
@@ -234,6 +237,7 @@
 				649F310826D383A3006B8551 /* ComponentList.swift in Sources */,
 				640FA6AF26C3F53F009548F5 /* RequestDetailView.swift in Sources */,
 				644A38EF26CC04750077F972 /* Detail.swift in Sources */,
+				64CB519326DD03AA00E3D589 /* TileView2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
