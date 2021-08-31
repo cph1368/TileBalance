@@ -60,9 +60,10 @@ struct SelectAccView: View {
                             .modifier(Header3())
                             .padding(.top,4)
                     }
-                    //.accessibilityElement(children: .combine)
-                    .accessibilityElement(children: .ignore)
-                    .accessibility(label: Text("Westpac esaver here"))
+                    .accessibilityElement(children: .combine)
+                    //.accessibilityElement(children: .ignore)
+                    //.accessibility(label: Text("Westpac esaver here"))
+                        // label = account name  // value = esaver
                     //using accessibilty element ignore and replacing it with the label
                     
                     //Using Value as value might change depending on data
@@ -73,7 +74,8 @@ struct SelectAccView: View {
                     //.accessibility(removeTraits: .isImage)
                     
                     //Using accessibility hidden bollean to hide content such as image
-                    //.accessibility(hidden: true)X
+                    //.accessibility(hidden: true)
+                    
                     
                     .padding(.top)
                     
