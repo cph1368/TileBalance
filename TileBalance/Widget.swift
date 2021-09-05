@@ -10,6 +10,10 @@ import SwiftUI
 
 struct Widget: View {
     
+    @AppStorage("widget", store: UserDefaults(suiteName: "group.com.corryhandayani.Challenge.TileBalance"))
+    
+    var wigdgetData: Data = Data()
+    
     let widgets = [
         WidgetData(id: 1, statusTitle: "Business Trip", iconName: "Avatar-business-trip"),
         WidgetData(id: 2, statusTitle: "In office", iconName: "Avatar-in-office"),
