@@ -12,7 +12,7 @@ struct Widget: View {
     
     @AppStorage("widget", store: UserDefaults(suiteName: "group.com.corryhandayani.Challenge.TileBalance"))
     
-    var wigdgetData: Data = Data()
+    var widgetData: Data = Data()
     
     let widgets = [
         WidgetData(id: 1, statusTitle: "Business Trip", iconName: "Avatar-business-trip"),
@@ -24,22 +24,29 @@ struct Widget: View {
     
     var body: some View {
         
-        ScrollView{
+     
             VStack {
         
                 ForEach(widgets){
                     WidgetData in
                     
                     WidgetView(widget:WidgetData)
+                        .onTapGesture {
+                            save(WidgetData)
+                        }
                
                 }
             }
         }
         
-        
+    func save(_ widgets: WidgetData){
+        guard let WidgetData = try? JSONEncoder().encode(widgets) else {return}
+        self.widgetData = WidgetData
+        print("save \(widgetData)")
+    }
                     
     }
-}
+
 
 struct Widget_Previews: PreviewProvider {
     static var previews: some View {
