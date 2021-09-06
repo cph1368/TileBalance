@@ -51,12 +51,13 @@ struct SmartAppWidgetEntryView : View {
                 VStack(alignment: .leading,spacing: 0){
                     Text("WORKING STATUS")
                         .font(.system(size: 10))
-                      .padding(.bottom, 7)
 
+                 
                     Text("Business Trip")
                         .font(.system(size: 24))
                         .fontWeight(.semibold)
                         .fixedSize(horizontal: false, vertical: /*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
+                        .padding(.top,12)
            
                        
                     Image("Avatar-business-trip")
@@ -64,11 +65,12 @@ struct SmartAppWidgetEntryView : View {
                     
                 }
                 .padding(.top,16)
-            
+                .frame(width: 145, height: 145, alignment: .leading)
                 
              }
             .foregroundColor(Color(#colorLiteral(red: 0, green: 0.7069736123, blue: 0.6013585925, alpha: 1)))
-            .frame(width: 145, height: 140, alignment: .leading)
+            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .leading)
+            // need to occupy the whole layout
             .padding()
           
             .cornerRadius(30)
@@ -92,8 +94,14 @@ struct SmartAppWidget: Widget {
 
 struct SmartAppWidget_Previews: PreviewProvider {
     static var previews: some View {
-        SmartAppWidgetEntryView(entry: SimpleEntry(date: Date(), widgetcontents: "Widget here"))
-            .previewContext(WidgetPreviewContext(family: .systemSmall))
+        Group {
+            SmartAppWidgetEntryView(entry: SimpleEntry(date: Date(), widgetcontents: "Widget here"))
+                .previewContext(WidgetPreviewContext(family: .systemSmall))
+            SmartAppWidgetEntryView(entry: SimpleEntry(date: Date(), widgetcontents: "Widget here"))
+                .previewContext(WidgetPreviewContext(family: .systemMedium))
+            SmartAppWidgetEntryView(entry: SimpleEntry(date: Date(), widgetcontents: "Widget here"))
+                .previewContext(WidgetPreviewContext(family: .systemLarge))
+        }
     }
 }
 class MyDataProvider{
