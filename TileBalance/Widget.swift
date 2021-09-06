@@ -30,7 +30,7 @@ struct Widget: View {
                 ForEach(widgets){
                     WidgetData in
                     
-                    WidgetView(widget:WidgetData)
+                    xsWidgetView(widget:WidgetData)
                         .onTapGesture {
                             save(WidgetData)
                         }

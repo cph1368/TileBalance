@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct WidgetView: View {
+struct xsWidgetView: View {
     
     let widget: WidgetData
     

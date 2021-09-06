@@ -21,7 +21,8 @@ struct ContentView: View {
            //RequestDetailView()
            // TileView()
            // SelectAccView()
-           Widget()
+           SmallWidget()
+            //xsWidgetView()
         }
    
         

@@ -20,14 +20,22 @@ extension View {
     }
     func Black() -> some View {
         self.background(Color("LightBlack"))
-            .foregroundColor(Color("Black"))
+            .foregroundColor(Color("DarkBlack"))
     }
     func Cyan() -> some View {
         self.background(Color("LightCyan"))
             .foregroundColor(Color("DarkCyan"))
     }
     func Peach() -> some View {
-        self.background(Color("LightPeach"))
-            .foregroundColor(Color("Peach"))
+        self.background(Color("Peach"))
+            .foregroundColor(Color("DarkPeach"))
+    }
+    func Green() -> some View {
+        self.background(Color("LightGreen"))
+            .foregroundColor(Color("DarkGreen"))
+    }
+    func Blue() -> some View {
+        self.background(Color("LightBlue"))
+            .foregroundColor(Color("DarkBlue"))
     }
 }
