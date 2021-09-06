@@ -12,7 +12,7 @@ struct Widget: View {
     
     @AppStorage("widget", store: UserDefaults(suiteName: "group.com.corryhandayani.Challenge.TileBalance"))
     
-    var widgetData: Data = Data()
+    var wigdgetData: Data = Data()
     
     let widgets = [
         WidgetData(id: 1, statusTitle: "Business Trip", iconName: "Avatar-business-trip"),
@@ -31,9 +31,6 @@ struct Widget: View {
                     WidgetData in
                     
                     WidgetView(widget:WidgetData)
-                        .onTapGesture {
-                            save(WidgetData)
-                        }
                
                 }
             }
@@ -41,12 +38,6 @@ struct Widget: View {
         
         
                     
-    }
-    
-    func save(_ widget: WidgetData){
-        guard let WidgetData = try? JSONEncoder().encode(widgets)else {return}
-        self.widgetData = WidgetData
-        print("save \(widgets)")
     }
 }
 
