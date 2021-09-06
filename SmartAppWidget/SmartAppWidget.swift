@@ -68,7 +68,7 @@ struct SmartAppWidgetEntryView : View {
                 
              }
             .foregroundColor(Color(#colorLiteral(red: 0, green: 0.7069736123, blue: 0.6013585925, alpha: 1)))
-            .frame(width: 145, height: 140, alignment: .leading)
+            .frame(maxWidth: .infinity, alignment: .leading)
             .padding()
           
             .cornerRadius(30)
