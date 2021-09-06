@@ -60,7 +60,7 @@ struct SmartAppWidgetEntryView : View {
            
                        
                     Image("Avatar-business-trip")
-                        .padding(.top,12)
+                        .padding(.top,6)
                     
                 }
                 .padding(.top,16)
