@@ -45,7 +45,35 @@ struct SmartAppWidgetEntryView : View {
     var entry: Provider.Entry
 
     var body: some View {
-        Text(entry.date, style: .time)
+        ZStack{
+            VStack {
+                
+                VStack(alignment: .leading,spacing: 0){
+                    Text("WORKING STATUS")
+                        .font(.system(size: 10))
+                      .padding(.bottom, 7)
+
+                    Text("Business Trip")
+                        .font(.system(size: 24))
+                        .fontWeight(.semibold)
+                        .fixedSize(horizontal: false, vertical: /*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
+           
+                       
+                    Image("Avatar-business-trip")
+                        .padding(.top,12)
+                    
+                }
+                .padding(.top,16)
+            
+                
+             }
+            .foregroundColor(Color(#colorLiteral(red: 0, green: 0.7069736123, blue: 0.6013585925, alpha: 1)))
+            .frame(width: 145, height: 140, alignment: .leading)
+            .padding()
+          
+            .cornerRadius(30)
+        }
+        .background(Color(#colorLiteral(red: 0.9058823529, green: 0.968627451, blue: 0.9568627451, alpha: 1)))
     }
 }
 
