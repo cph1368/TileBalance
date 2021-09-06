@@ -43,7 +43,9 @@ struct SimpleEntry: TimelineEntry {
 
 struct SmartAppWidgetEntryView : View {
     var entry: Provider.Entry
-
+//add configuration
+    @Environment(\.widgetFamily) var widgetFamily
+    
     var body: some View {
         ZStack{
             VStack {
@@ -62,18 +64,22 @@ struct SmartAppWidgetEntryView : View {
                        
                     Image("Avatar-business-trip")
                         .padding(.top,6)
-                    
+                  
+                   
+                  
                 }
                 .padding(.top,16)
                 .frame(width: 145, height: 145, alignment: .leading)
-                
+            
              }
             .foregroundColor(Color(#colorLiteral(red: 0, green: 0.7069736123, blue: 0.6013585925, alpha: 1)))
             .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .leading)
             // need to occupy the whole layout
             .padding()
-          
             .cornerRadius(30)
+            
+            
+            
         }
         .background(Color(#colorLiteral(red: 0.9058823529, green: 0.968627451, blue: 0.9568627451, alpha: 1)))
     }
