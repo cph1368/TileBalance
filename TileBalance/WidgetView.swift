@@ -34,14 +34,27 @@ struct WidgetView: View {
         
             
          }
-        .foregroundColor(Color(#colorLiteral(red: 0, green: 0.7069736123, blue: 0.6013585925, alpha: 1)))
+       // .foregroundColor(Color(#colorLiteral(red: 0, green: 0.7069736123, blue: 0.6013585925, alpha: 1)))
         .frame(width: 155, height: 155, alignment: .leading)
         .padding()
-        .background(Color(#colorLiteral(red: 0.9058823529, green: 0.968627451, blue: 0.9568627451, alpha: 1)))
+        .Cyan()
         .cornerRadius(30)
 
         
         
                     
+    }
+}
+
+
+
+// add custom modifier
+struct CustomModifier: ViewModifier {
+
+    @State var backgroundColor = Color("Magenta")
+    func body(content: Content) -> some View {
+    return content
+          .background(Color("Magenta"))
+            .foregroundColor(Color("Magenta"))
     }
 }
