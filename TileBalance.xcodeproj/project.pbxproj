@@ -28,9 +28,38 @@
 		645DA91626C17AA200C4E149 /* Account.json in Resources */ = {isa = PBXBuildFile; fileRef = 645DA91526C17AA200C4E149 /* Account.json */; };
 		645DA91826C17C0000C4E149 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645DA91726C17C0000C4E149 /* Data.swift */; };
 		645DA91A26C17CF800C4E149 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645DA91926C17CF800C4E149 /* Account.swift */; };
+		64647FCD26E5E613000F0FF2 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64647FCC26E5E613000F0FF2 /* WidgetKit.framework */; };
+		64647FCF26E5E613000F0FF2 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64647FCE26E5E613000F0FF2 /* SwiftUI.framework */; };
+		64647FD226E5E613000F0FF2 /* SmartAppWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64647FD126E5E613000F0FF2 /* SmartAppWidget.swift */; };
+		64647FD426E5E614000F0FF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64647FD326E5E614000F0FF2 /* Assets.xcassets */; };
+		64647FD826E5E614000F0FF2 /* SmartAppWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 64647FCA26E5E613000F0FF2 /* SmartAppWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		649F310826D383A3006B8551 /* ComponentList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649F310726D383A3006B8551 /* ComponentList.swift */; };
 		64CB519326DD03AA00E3D589 /* TileView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64CB519226DD03AA00E3D589 /* TileView2.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		64647FD626E5E614000F0FF2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 645DA8ED26C177DF00C4E149 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 64647FC926E5E613000F0FF2;
+			remoteInfo = SmartAppWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		64647FD926E5E614000F0FF2 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				64647FD826E5E614000F0FF2 /* SmartAppWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		640FA6AC26C3CCFF009548F5 /* TileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileView.swift; sourceTree = "<group>"; };
@@ -57,6 +86,12 @@
 		645DA91526C17AA200C4E149 /* Account.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Account.json; sourceTree = "<group>"; };
 		645DA91726C17C0000C4E149 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		645DA91926C17CF800C4E149 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		64647FCA26E5E613000F0FF2 /* SmartAppWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SmartAppWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		64647FCC26E5E613000F0FF2 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		64647FCE26E5E613000F0FF2 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		64647FD126E5E613000F0FF2 /* SmartAppWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartAppWidget.swift; sourceTree = "<group>"; };
+		64647FD326E5E614000F0FF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		64647FD526E5E614000F0FF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		649F310726D383A3006B8551 /* ComponentList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentList.swift; sourceTree = "<group>"; };
 		64CB519226DD03AA00E3D589 /* TileView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileView2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -66,6 +101,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64647FC726E5E613000F0FF2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64647FCF26E5E613000F0FF2 /* SwiftUI.framework in Frameworks */,
+				64647FCD26E5E613000F0FF2 /* WidgetKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +130,8 @@
 			isa = PBXGroup;
 			children = (
 				645DA8F726C177DF00C4E149 /* TileBalance */,
+				64647FD026E5E613000F0FF2 /* SmartAppWidget */,
+				64647FCB26E5E613000F0FF2 /* Frameworks */,
 				645DA8F626C177DF00C4E149 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -94,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				645DA8F526C177DF00C4E149 /* TileBalance.app */,
+				64647FCA26E5E613000F0FF2 /* SmartAppWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -143,6 +190,25 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		64647FCB26E5E613000F0FF2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				64647FCC26E5E613000F0FF2 /* WidgetKit.framework */,
+				64647FCE26E5E613000F0FF2 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		64647FD026E5E613000F0FF2 /* SmartAppWidget */ = {
+			isa = PBXGroup;
+			children = (
+				64647FD126E5E613000F0FF2 /* SmartAppWidget.swift */,
+				64647FD326E5E614000F0FF2 /* Assets.xcassets */,
+				64647FD526E5E614000F0FF2 /* Info.plist */,
+			);
+			path = SmartAppWidget;
+			sourceTree = "<group>";
+		};
 		64BA8F2326C184E100ACEBAC /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -171,15 +237,34 @@
 				645DA8F126C177DF00C4E149 /* Sources */,
 				645DA8F226C177DF00C4E149 /* Frameworks */,
 				645DA8F326C177DF00C4E149 /* Resources */,
+				64647FD926E5E614000F0FF2 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				64647FD726E5E614000F0FF2 /* PBXTargetDependency */,
 			);
 			name = TileBalance;
 			productName = TileBalance;
 			productReference = 645DA8F526C177DF00C4E149 /* TileBalance.app */;
 			productType = "com.apple.product-type.application";
+		};
+		64647FC926E5E613000F0FF2 /* SmartAppWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64647FDC26E5E614000F0FF2 /* Build configuration list for PBXNativeTarget "SmartAppWidgetExtension" */;
+			buildPhases = (
+				64647FC626E5E613000F0FF2 /* Sources */,
+				64647FC726E5E613000F0FF2 /* Frameworks */,
+				64647FC826E5E613000F0FF2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SmartAppWidgetExtension;
+			productName = SmartAppWidgetExtension;
+			productReference = 64647FCA26E5E613000F0FF2 /* SmartAppWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -187,12 +272,15 @@
 		645DA8ED26C177DF00C4E149 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1130;
+				LastSwiftUpdateCheck = 1230;
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = "Corry Handayani";
 				TargetAttributes = {
 					645DA8F426C177DF00C4E149 = {
 						CreatedOnToolsVersion = 11.3;
+					};
+					64647FC926E5E613000F0FF2 = {
+						CreatedOnToolsVersion = 12.3;
 					};
 				};
 			};
@@ -210,6 +298,7 @@
 			projectRoot = "";
 			targets = (
 				645DA8F426C177DF00C4E149 /* TileBalance */,
+				64647FC926E5E613000F0FF2 /* SmartAppWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -224,6 +313,14 @@
 				644A38FB26CC0D020077F972 /* Details.json in Resources */,
 				645DA90226C177E000C4E149 /* Preview Assets.xcassets in Resources */,
 				645DA8FF26C177E000C4E149 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64647FC826E5E613000F0FF2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64647FD426E5E614000F0FF2 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,7 +352,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		64647FC626E5E613000F0FF2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64647FD226E5E613000F0FF2 /* SmartAppWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		64647FD726E5E614000F0FF2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 64647FC926E5E613000F0FF2 /* SmartAppWidgetExtension */;
+			targetProxy = 64647FD626E5E614000F0FF2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		645DA90326C177E000C4E149 /* LaunchScreen.storyboard */ = {
@@ -386,6 +499,7 @@
 		645DA90A26C177E000C4E149 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = TileBalance/TileBalance.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -407,6 +521,7 @@
 		645DA90B26C177E000C4E149 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = TileBalance/TileBalance.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -420,6 +535,52 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.corryhandayani.Challenge.TileBalance;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		64647FDA26E5E614000F0FF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PDZ392GNP5;
+				INFOPLIST_FILE = SmartAppWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.corryhandayani.Challenge.TileBalance.SmartAppWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		64647FDB26E5E614000F0FF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PDZ392GNP5;
+				INFOPLIST_FILE = SmartAppWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.corryhandayani.Challenge.TileBalance.SmartAppWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -442,6 +603,15 @@
 			buildConfigurations = (
 				645DA90A26C177E000C4E149 /* Debug */,
 				645DA90B26C177E000C4E149 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		64647FDC26E5E614000F0FF2 /* Build configuration list for PBXNativeTarget "SmartAppWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64647FDA26E5E614000F0FF2 /* Debug */,
+				64647FDB26E5E614000F0FF2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
