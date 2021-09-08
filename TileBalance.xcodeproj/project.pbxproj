@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		640E993126E8FD98005C72CF /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64647FCC26E5E613000F0FF2 /* WidgetKit.framework */; };
+		640E993226E8FD98005C72CF /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64647FCE26E5E613000F0FF2 /* SwiftUI.framework */; };
+		640E993526E8FD98005C72CF /* StatusUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640E993426E8FD98005C72CF /* StatusUpdate.swift */; };
+		640E993826E8FD99005C72CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 640E993726E8FD99005C72CF /* Assets.xcassets */; };
+		640E993A26E8FD99005C72CF /* StatusUpdate.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 640E993626E8FD98005C72CF /* StatusUpdate.intentdefinition */; };
+		640E993B26E8FD99005C72CF /* StatusUpdate.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 640E993626E8FD98005C72CF /* StatusUpdate.intentdefinition */; };
+		640E993E26E8FD99005C72CF /* StatusUpdateExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 640E993026E8FD98005C72CF /* StatusUpdateExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		640FA6AD26C3CCFF009548F5 /* TileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640FA6AC26C3CCFF009548F5 /* TileView.swift */; };
 		640FA6AF26C3F53F009548F5 /* RequestDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640FA6AE26C3F53F009548F5 /* RequestDetailView.swift */; };
 		640FA6B726C4D5C1009548F5 /* CircleIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640FA6B626C4D5C1009548F5 /* CircleIcon.swift */; };
@@ -44,6 +51,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		640E993C26E8FD99005C72CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 645DA8ED26C177DF00C4E149 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 640E992F26E8FD98005C72CF;
+			remoteInfo = StatusUpdateExtension;
+		};
 		64647FD626E5E614000F0FF2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 645DA8ED26C177DF00C4E149 /* Project object */;
@@ -67,6 +81,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
+				640E993E26E8FD99005C72CF /* StatusUpdateExtension.appex in Embed App Extensions */,
 				64EC2C4226E6D7D100A2DDA0 /* StatusWidgetExtension.appex in Embed App Extensions */,
 				64647FD826E5E614000F0FF2 /* SmartAppWidgetExtension.appex in Embed App Extensions */,
 			);
@@ -76,6 +91,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		640E993026E8FD98005C72CF /* StatusUpdateExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = StatusUpdateExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		640E993426E8FD98005C72CF /* StatusUpdate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusUpdate.swift; sourceTree = "<group>"; };
+		640E993626E8FD98005C72CF /* StatusUpdate.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = StatusUpdate.intentdefinition; sourceTree = "<group>"; };
+		640E993726E8FD99005C72CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		640E993926E8FD99005C72CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		640FA6AC26C3CCFF009548F5 /* TileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileView.swift; sourceTree = "<group>"; };
 		640FA6AE26C3F53F009548F5 /* RequestDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestDetailView.swift; sourceTree = "<group>"; };
 		640FA6B626C4D5C1009548F5 /* CircleIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleIcon.swift; sourceTree = "<group>"; };
@@ -116,6 +136,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		640E992D26E8FD98005C72CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				640E993226E8FD98005C72CF /* SwiftUI.framework in Frameworks */,
+				640E993126E8FD98005C72CF /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		645DA8F226C177DF00C4E149 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -144,6 +173,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		640E993326E8FD98005C72CF /* StatusUpdate */ = {
+			isa = PBXGroup;
+			children = (
+				640E993426E8FD98005C72CF /* StatusUpdate.swift */,
+				640E993626E8FD98005C72CF /* StatusUpdate.intentdefinition */,
+				640E993726E8FD99005C72CF /* Assets.xcassets */,
+				640E993926E8FD99005C72CF /* Info.plist */,
+			);
+			path = StatusUpdate;
+			sourceTree = "<group>";
+		};
 		644A38EB26CBF9680077F972 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -160,6 +200,7 @@
 				645DA8F726C177DF00C4E149 /* TileBalance */,
 				64647FD026E5E613000F0FF2 /* SmartAppWidget */,
 				64EC2C3A26E6D7CA00A2DDA0 /* StatusWidget */,
+				640E993326E8FD98005C72CF /* StatusUpdate */,
 				64647FCB26E5E613000F0FF2 /* Frameworks */,
 				645DA8F626C177DF00C4E149 /* Products */,
 			);
@@ -171,6 +212,7 @@
 				645DA8F526C177DF00C4E149 /* TileBalance.app */,
 				64647FCA26E5E613000F0FF2 /* SmartAppWidgetExtension.appex */,
 				64EC2C3726E6D7CA00A2DDA0 /* StatusWidgetExtension.appex */,
+				640E993026E8FD98005C72CF /* StatusUpdateExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -271,6 +313,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		640E992F26E8FD98005C72CF /* StatusUpdateExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 640E994126E8FD99005C72CF /* Build configuration list for PBXNativeTarget "StatusUpdateExtension" */;
+			buildPhases = (
+				640E992C26E8FD98005C72CF /* Sources */,
+				640E992D26E8FD98005C72CF /* Frameworks */,
+				640E992E26E8FD98005C72CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StatusUpdateExtension;
+			productName = StatusUpdateExtension;
+			productReference = 640E993026E8FD98005C72CF /* StatusUpdateExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		645DA8F426C177DF00C4E149 /* TileBalance */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 645DA90926C177E000C4E149 /* Build configuration list for PBXNativeTarget "TileBalance" */;
@@ -285,6 +344,7 @@
 			dependencies = (
 				64647FD726E5E614000F0FF2 /* PBXTargetDependency */,
 				64EC2C4126E6D7D100A2DDA0 /* PBXTargetDependency */,
+				640E993D26E8FD99005C72CF /* PBXTargetDependency */,
 			);
 			name = TileBalance;
 			productName = TileBalance;
@@ -335,6 +395,9 @@
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = "Corry Handayani";
 				TargetAttributes = {
+					640E992F26E8FD98005C72CF = {
+						CreatedOnToolsVersion = 12.3;
+					};
 					645DA8F426C177DF00C4E149 = {
 						CreatedOnToolsVersion = 11.3;
 					};
@@ -362,11 +425,20 @@
 				645DA8F426C177DF00C4E149 /* TileBalance */,
 				64647FC926E5E613000F0FF2 /* SmartAppWidgetExtension */,
 				64EC2C3626E6D7CA00A2DDA0 /* StatusWidgetExtension */,
+				640E992F26E8FD98005C72CF /* StatusUpdateExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		640E992E26E8FD98005C72CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				640E993826E8FD99005C72CF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		645DA8F326C177DF00C4E149 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -398,6 +470,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		640E992C26E8FD98005C72CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				640E993526E8FD98005C72CF /* StatusUpdate.swift in Sources */,
+				640E993A26E8FD99005C72CF /* StatusUpdate.intentdefinition in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		645DA8F126C177DF00C4E149 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -415,6 +496,7 @@
 				645DA91126C1789000C4E149 /* TextStyleGuide.swift in Sources */,
 				640FA6B726C4D5C1009548F5 /* CircleIcon.swift in Sources */,
 				645DA91826C17C0000C4E149 /* Data.swift in Sources */,
+				640E993B26E8FD99005C72CF /* StatusUpdate.intentdefinition in Sources */,
 				642EA77826E4BEEE00BB0FA6 /* Widget.swift in Sources */,
 				649F310826D383A3006B8551 /* ComponentList.swift in Sources */,
 				640FA6AF26C3F53F009548F5 /* RequestDetailView.swift in Sources */,
@@ -443,6 +525,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		640E993D26E8FD99005C72CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 640E992F26E8FD98005C72CF /* StatusUpdateExtension */;
+			targetProxy = 640E993C26E8FD99005C72CF /* PBXContainerItemProxy */;
+		};
 		64647FD726E5E614000F0FF2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 64647FC926E5E613000F0FF2 /* SmartAppWidgetExtension */;
@@ -467,6 +554,52 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		640E993F26E8FD99005C72CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PDZ392GNP5;
+				INFOPLIST_FILE = StatusUpdate/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.corryhandayani.Challenge.TileBalance.StatusUpdate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		640E994026E8FD99005C72CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PDZ392GNP5;
+				INFOPLIST_FILE = StatusUpdate/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.corryhandayani.Challenge.TileBalance.StatusUpdate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		645DA90726C177E000C4E149 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -720,6 +853,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		640E994126E8FD99005C72CF /* Build configuration list for PBXNativeTarget "StatusUpdateExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				640E993F26E8FD99005C72CF /* Debug */,
+				640E994026E8FD99005C72CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		645DA8F026C177DF00C4E149 /* Build configuration list for PBXProject "TileBalance" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
