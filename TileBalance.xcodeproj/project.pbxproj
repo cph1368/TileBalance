@@ -36,6 +36,11 @@
 		649F310826D383A3006B8551 /* ComponentList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649F310726D383A3006B8551 /* ComponentList.swift */; };
 		64CB519326DD03AA00E3D589 /* TileView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64CB519226DD03AA00E3D589 /* TileView2.swift */; };
 		64EC2C2826E60D6B00A2DDA0 /* SmallWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EC2C2726E60D6B00A2DDA0 /* SmallWidget.swift */; };
+		64EC2C3826E6D7CA00A2DDA0 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64647FCC26E5E613000F0FF2 /* WidgetKit.framework */; };
+		64EC2C3926E6D7CA00A2DDA0 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64647FCE26E5E613000F0FF2 /* SwiftUI.framework */; };
+		64EC2C3C26E6D7CA00A2DDA0 /* StatusWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EC2C3B26E6D7CA00A2DDA0 /* StatusWidget.swift */; };
+		64EC2C3E26E6D7D100A2DDA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64EC2C3D26E6D7D100A2DDA0 /* Assets.xcassets */; };
+		64EC2C4226E6D7D100A2DDA0 /* StatusWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 64EC2C3726E6D7CA00A2DDA0 /* StatusWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +51,13 @@
 			remoteGlobalIDString = 64647FC926E5E613000F0FF2;
 			remoteInfo = SmartAppWidgetExtension;
 		};
+		64EC2C4026E6D7D100A2DDA0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 645DA8ED26C177DF00C4E149 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 64EC2C3626E6D7CA00A2DDA0;
+			remoteInfo = StatusWidgetExtension;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -55,6 +67,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
+				64EC2C4226E6D7D100A2DDA0 /* StatusWidgetExtension.appex in Embed App Extensions */,
 				64647FD826E5E614000F0FF2 /* SmartAppWidgetExtension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
@@ -96,6 +109,10 @@
 		649F310726D383A3006B8551 /* ComponentList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentList.swift; sourceTree = "<group>"; };
 		64CB519226DD03AA00E3D589 /* TileView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileView2.swift; sourceTree = "<group>"; };
 		64EC2C2726E60D6B00A2DDA0 /* SmallWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallWidget.swift; sourceTree = "<group>"; };
+		64EC2C3726E6D7CA00A2DDA0 /* StatusWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = StatusWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		64EC2C3B26E6D7CA00A2DDA0 /* StatusWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusWidget.swift; sourceTree = "<group>"; };
+		64EC2C3D26E6D7D100A2DDA0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		64EC2C3F26E6D7D100A2DDA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +129,15 @@
 			files = (
 				64647FCF26E5E613000F0FF2 /* SwiftUI.framework in Frameworks */,
 				64647FCD26E5E613000F0FF2 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64EC2C3426E6D7CA00A2DDA0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64EC2C3926E6D7CA00A2DDA0 /* SwiftUI.framework in Frameworks */,
+				64EC2C3826E6D7CA00A2DDA0 /* WidgetKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,6 +159,7 @@
 			children = (
 				645DA8F726C177DF00C4E149 /* TileBalance */,
 				64647FD026E5E613000F0FF2 /* SmartAppWidget */,
+				64EC2C3A26E6D7CA00A2DDA0 /* StatusWidget */,
 				64647FCB26E5E613000F0FF2 /* Frameworks */,
 				645DA8F626C177DF00C4E149 /* Products */,
 			);
@@ -143,6 +170,7 @@
 			children = (
 				645DA8F526C177DF00C4E149 /* TileBalance.app */,
 				64647FCA26E5E613000F0FF2 /* SmartAppWidgetExtension.appex */,
+				64EC2C3726E6D7CA00A2DDA0 /* StatusWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -230,6 +258,16 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		64EC2C3A26E6D7CA00A2DDA0 /* StatusWidget */ = {
+			isa = PBXGroup;
+			children = (
+				64EC2C3B26E6D7CA00A2DDA0 /* StatusWidget.swift */,
+				64EC2C3D26E6D7D100A2DDA0 /* Assets.xcassets */,
+				64EC2C3F26E6D7D100A2DDA0 /* Info.plist */,
+			);
+			path = StatusWidget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -246,6 +284,7 @@
 			);
 			dependencies = (
 				64647FD726E5E614000F0FF2 /* PBXTargetDependency */,
+				64EC2C4126E6D7D100A2DDA0 /* PBXTargetDependency */,
 			);
 			name = TileBalance;
 			productName = TileBalance;
@@ -269,6 +308,23 @@
 			productReference = 64647FCA26E5E613000F0FF2 /* SmartAppWidgetExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		64EC2C3626E6D7CA00A2DDA0 /* StatusWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64EC2C4326E6D7D100A2DDA0 /* Build configuration list for PBXNativeTarget "StatusWidgetExtension" */;
+			buildPhases = (
+				64EC2C3326E6D7CA00A2DDA0 /* Sources */,
+				64EC2C3426E6D7CA00A2DDA0 /* Frameworks */,
+				64EC2C3526E6D7CA00A2DDA0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StatusWidgetExtension;
+			productName = StatusWidgetExtension;
+			productReference = 64EC2C3726E6D7CA00A2DDA0 /* StatusWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -283,6 +339,9 @@
 						CreatedOnToolsVersion = 11.3;
 					};
 					64647FC926E5E613000F0FF2 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					64EC2C3626E6D7CA00A2DDA0 = {
 						CreatedOnToolsVersion = 12.3;
 					};
 				};
@@ -302,6 +361,7 @@
 			targets = (
 				645DA8F426C177DF00C4E149 /* TileBalance */,
 				64647FC926E5E613000F0FF2 /* SmartAppWidgetExtension */,
+				64EC2C3626E6D7CA00A2DDA0 /* StatusWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -324,6 +384,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				64647FD426E5E614000F0FF2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64EC2C3526E6D7CA00A2DDA0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64EC2C3E26E6D7D100A2DDA0 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,6 +432,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		64EC2C3326E6D7CA00A2DDA0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64EC2C3C26E6D7CA00A2DDA0 /* StatusWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -371,6 +447,11 @@
 			isa = PBXTargetDependency;
 			target = 64647FC926E5E613000F0FF2 /* SmartAppWidgetExtension */;
 			targetProxy = 64647FD626E5E614000F0FF2 /* PBXContainerItemProxy */;
+		};
+		64EC2C4126E6D7D100A2DDA0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 64EC2C3626E6D7CA00A2DDA0 /* StatusWidgetExtension */;
+			targetProxy = 64EC2C4026E6D7D100A2DDA0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -590,6 +671,52 @@
 			};
 			name = Release;
 		};
+		64EC2C4426E6D7D100A2DDA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PDZ392GNP5;
+				INFOPLIST_FILE = StatusWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.corryhandayani.Challenge.TileBalance.StatusWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		64EC2C4526E6D7D100A2DDA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PDZ392GNP5;
+				INFOPLIST_FILE = StatusWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.corryhandayani.Challenge.TileBalance.StatusWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -616,6 +743,15 @@
 			buildConfigurations = (
 				64647FDA26E5E614000F0FF2 /* Debug */,
 				64647FDB26E5E614000F0FF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		64EC2C4326E6D7D100A2DDA0 /* Build configuration list for PBXNativeTarget "StatusWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64EC2C4426E6D7D100A2DDA0 /* Debug */,
+				64EC2C4526E6D7D100A2DDA0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

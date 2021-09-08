@@ -44,9 +44,10 @@ struct SimpleEntry: TimelineEntry {
 struct SmartAppWidgetEntryView : View {
     var entry: Provider.Entry
 //add configuration
-    @Environment(\.widgetFamily) var widgetFamily
+   // @Environment(\.widgetFamily) var widgetFamily
     
     var body: some View {
+        
         ZStack{
             VStack {
                 
