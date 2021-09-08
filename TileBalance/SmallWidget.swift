@@ -33,13 +33,12 @@ struct SmallWidget: View {
             
                 
              }
-            .frame(width: 155, height: 155, alignment: .leading)
-            .padding()
+            //.frame(width: 155, height: 155, alignment: .leading)
+           // .padding()
+            .FramePadding()
             .Cyan()
             .cornerRadius(30)
-      
-            
-            
+           
             VStack {
                 
                 VStack(alignment: .leading,spacing: 0){
@@ -61,8 +60,7 @@ struct SmallWidget: View {
             
                 
              }
-            .frame(width: 155, height: 155, alignment: .leading)
-            .padding()
+            .FramePadding()
             .Green()
             .cornerRadius(30)
             
@@ -86,8 +84,7 @@ struct SmallWidget: View {
             
                 
              }
-            .frame(width: 155, height: 155, alignment: .leading)
-            .padding()
+            .FramePadding()
             .Blue()
             .cornerRadius(30)
             
@@ -111,8 +108,7 @@ struct SmallWidget: View {
             
                 
              }
-            .frame(width: 155, height: 155, alignment: .leading)
-            .padding()
+            .FramePadding()
             .Black()
             .cornerRadius(30)
             
@@ -136,8 +132,7 @@ struct SmallWidget: View {
             
                 
              }
-            .frame(width: 155, height: 155, alignment: .leading)
-            .padding()
+            .FramePadding()
             .Peach()
             .cornerRadius(30)
             
@@ -162,8 +157,7 @@ struct SmallWidget: View {
             
                 
              }
-            .frame(width: 155, height: 155, alignment: .leading)
-            .padding()
+            .FramePadding()
             .Magenta()
             .cornerRadius(30)
         }

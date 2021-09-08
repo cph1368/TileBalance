@@ -38,4 +38,9 @@ extension View {
         self.background(Color("LightBlue"))
             .foregroundColor(Color("DarkBlue"))
     }
+    
+    func FramePadding() -> some View {
+        self.frame(width: 155, height: 155, alignment: .leading)
+            .padding()
+    }
 }
