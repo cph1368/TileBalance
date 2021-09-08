@@ -7,7 +7,11 @@
 //
 // USING INTENTS - when creating new widget file, please check mark the option for intents configurations to avoid issues with XCode Versions
 
-// USING TARGET MEMBERSHIP - to share files ( only one side is required, not the widget side)
+// USING TARGET MEMBERSHIP - to share files including extensions and assets ( only one side is required, not the widget side)
+
+// Unknown inside the intent file starts from 0 which means
+// THIS WILL BE USED AS DEFAULT
+
 
 import WidgetKit
 import SwiftUI
@@ -22,6 +26,10 @@ struct Provider: IntentTimelineProvider {
         let entry = SimpleEntry(date: Date(), configuration: configuration)
         completion(entry)
     }
+    
+    
+    //defining switch cases logic
+    //defining category here
     func category(for configuration: ConfigurationIntent) -> UpdateCategory{
         switch configuration.configuration {
         case .inoffice:
@@ -74,6 +82,8 @@ struct Provider: IntentTimelineProvider {
         
         
     }
+    
+    //NO CHANGES on TIMELINE REQUIRED - using Boiler plate
     func getTimeline(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
         var entries: [SimpleEntry] = []
         
@@ -89,7 +99,7 @@ struct Provider: IntentTimelineProvider {
         completion(timeline)
     }
 }
-
+ 
 struct PlaceholderView: View {
     var body: some View {
         Text("Loading...").redacted(reason: .placeholder)
@@ -98,7 +108,8 @@ struct PlaceholderView: View {
 struct SimpleEntry: TimelineEntry {
     let date: Date
     let configuration: ConfigurationIntent
-   // let category: UpdateCategory
+          
+    //name of the intent file - ConfigurationIntent
 }
 
 struct StatusUpdateEntryView : View {
@@ -111,6 +122,11 @@ struct StatusUpdateEntryView : View {
         }
     }
 }
+
+// in order to avoid issues
+// with rendering Intent or widget edit options
+// needs status view below to pass the value
+
 struct StatusView: View {
 
     let category: Configuration
@@ -301,7 +317,9 @@ struct StatusView: View {
     }
 }
 
-
+//NOTE:
+//recently added Configuration.inoffice to resolve error -
+// SEE BELOW (rest is boilerplate code)
 @main
 struct StatusUpdate: Widget {
     let kind: String = "StatusUpdate"
@@ -309,6 +327,8 @@ struct StatusUpdate: Widget {
     var body: some WidgetConfiguration {
         IntentConfiguration(kind: kind, intent: ConfigurationIntent.self, provider: Provider()) { entry in
             StatusUpdateEntryView(entry: entry, category: Configuration.inoffice)
+            
+           
         }
         .configurationDisplayName("My Widget")
         .description("This is an example widget.")
@@ -319,6 +339,7 @@ struct StatusUpdate: Widget {
 struct StatusUpdate_Previews: PreviewProvider {
     static var previews: some View {
         StatusUpdateEntryView(entry: SimpleEntry(date: Date(), configuration: ConfigurationIntent()), category: Configuration.inoffice)
+     
             .previewContext(WidgetPreviewContext(family: .systemSmall))
     }
 }
