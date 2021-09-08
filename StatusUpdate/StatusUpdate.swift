@@ -19,7 +19,7 @@ struct Provider: IntentTimelineProvider {
         let entry = SimpleEntry(date: Date(), configuration: configuration)
         completion(entry)
     }
-    func category(for configuration: ConfigurationIntent) -> UpdateCategory {
+    func configuration(for configuration: ConfigurationIntent) -> UpdateCategory{
         switch configuration.configuration {
         case .inoffice:
             return .inoffice
