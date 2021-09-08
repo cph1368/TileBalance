@@ -14,6 +14,8 @@
 		640E993A26E8FD99005C72CF /* StatusUpdate.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 640E993626E8FD98005C72CF /* StatusUpdate.intentdefinition */; };
 		640E993B26E8FD99005C72CF /* StatusUpdate.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 640E993626E8FD98005C72CF /* StatusUpdate.intentdefinition */; };
 		640E993E26E8FD99005C72CF /* StatusUpdateExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 640E993026E8FD98005C72CF /* StatusUpdateExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		640E99D726E92D13005C72CF /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644A38EC26CBF9880077F972 /* Extensions.swift */; };
+		640E99DC26E92D65005C72CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 645DA8FE26C177E000C4E149 /* Assets.xcassets */; };
 		640FA6AD26C3CCFF009548F5 /* TileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640FA6AC26C3CCFF009548F5 /* TileView.swift */; };
 		640FA6AF26C3F53F009548F5 /* RequestDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640FA6AE26C3F53F009548F5 /* RequestDetailView.swift */; };
 		640FA6B726C4D5C1009548F5 /* CircleIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640FA6B626C4D5C1009548F5 /* CircleIcon.swift */; };
@@ -435,6 +437,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				640E99DC26E92D65005C72CF /* Assets.xcassets in Resources */,
 				640E993826E8FD99005C72CF /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -475,6 +478,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				640E993526E8FD98005C72CF /* StatusUpdate.swift in Sources */,
+				640E99D726E92D13005C72CF /* Extensions.swift in Sources */,
 				640E993A26E8FD99005C72CF /* StatusUpdate.intentdefinition in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -5,6 +5,9 @@
 //  Created by Corry Handayani on 9/9/21.
 //  Copyright © 2021 Corry Handayani. All rights reserved.
 //
+// USING INTENTS - when creating new widget file, please check mark the option for intents configurations to avoid issues with XCode Versions
+
+// USING TARGET MEMBERSHIP - to share files ( only one side is required, not the widget side)
 
 import WidgetKit
 import SwiftUI
@@ -112,41 +115,188 @@ struct StatusView: View {
 
     let category: Configuration
 
-
-
     var body: some View {
         switch category {
         case .inoffice:
 
-            ZStack{
-                Color.blue
-                Text("1234")
-            }
+            VStack{
+                
+                VStack(alignment: .leading,spacing: 0) {
+                    Text("WORKING STATUS")
+                        .font(.system(size: 10))
+                      .padding(.bottom, 7)
+
+                    Text("Business Trip")
+                        .font(.system(size: 24))
+                        .fontWeight(.semibold)
+                        .fixedSize(horizontal: false, vertical: /*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
+           
+                       
+                    Image("Avatar-business-trip")
+                        .padding(.top,12)
+                    
+                }
+                .padding(.top,16)
+             }
+            //.frame(width: 155, height: 155, alignment: .leading)
+           // .padding()
+            .FramePadding()
+            .Cyan()
+            .cornerRadius(30)
 
         case .businesstrip:
-            ZStack{
-                Color.blue
-            }
+            VStack{
+                
+                VStack(alignment: .leading,spacing: 0) {
+                    Text("WORKING STATUS")
+                        .font(.system(size: 10))
+                      .padding(.bottom, 7)
+
+                    Text("Business Trip")
+                        .font(.system(size: 24))
+                        .fontWeight(.semibold)
+                        .fixedSize(horizontal: false, vertical: /*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
+           
+                       
+                    Image("Avatar-business-trip")
+                        .padding(.top,12)
+                    
+                }
+                .padding(.top,16)
+            
+                
+             }
+            .FramePadding()
+            .Cyan()
+            .cornerRadius(30)
+           
         case .remote:
-            ZStack{
-                Color.blue
-            }
+            VStack {
+                
+                VStack(alignment: .leading,spacing: 0){
+                    Text("WORKING STATUS")
+                        .font(.system(size: 10))
+                      .padding(.bottom, 7)
+
+                    Text("Remote")
+                        .font(.system(size: 24))
+                        .fontWeight(.semibold)
+                        .fixedSize(horizontal: false, vertical: /*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
+           
+                    Image("Avatar-remote")
+                        .padding(.top,12)
+                    
+                }
+                .padding(.top,16)
+            
+                
+             }
+            .FramePadding()
+            .Blue()
+            .cornerRadius(30)
+            
         case .onleave:
-            ZStack{
-                Color.blue
-            }
+            VStack{
+                
+                VStack(alignment: .leading,spacing: 0){
+                    Text("WORKING STATUS")
+                        .font(.system(size: 10))
+                      .padding(.bottom, 7)
+
+                    Text("On leave")
+                        .font(.system(size: 24))
+                        .fontWeight(.semibold)
+                        .fixedSize(horizontal: false, vertical: /*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
+           
+                    Image("Avatar-on-leave")
+                        .padding(.top,12)
+                    
+                }
+                .padding(.top,16)
+            
+                
+             }
+            .FramePadding()
+            .Black()
+            .cornerRadius(30)
+            
         case .sick:
-            ZStack{
-                Color.blue
-            }
+            VStack{
+                
+                VStack(alignment: .leading,spacing: 0){
+                    Text("WORKING STATUS")
+                        .font(.system(size: 10))
+                      .padding(.bottom, 7)
+
+                    Text("Sick")
+                        .font(.system(size: 24))
+                        .fontWeight(.semibold)
+                        .fixedSize(horizontal: false, vertical: /*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
+           
+                    Image("Avatar-sick")
+                        .padding(.top,12)
+                    
+                }
+                .padding(.top,16)
+            
+                
+             }
+            .FramePadding()
+            .Peach()
+            .cornerRadius(30)
+            
         case .notworking:
-            ZStack{
-                Color.blue
-            }
+            VStack{
+                
+                VStack(alignment: .leading,spacing: 0){
+                    Text("WORKING STATUS")
+                        .font(.system(size: 10))
+                      .padding(.bottom, 7)
+
+                    Text("Not working")
+                        .font(.system(size: 24))
+                        .fontWeight(.semibold)
+                        .fixedSize(horizontal: false, vertical: /*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
+           
+                    Image("Avatar-not-working")
+                        .padding(.top,12)
+                    
+                }
+                .padding(.top,16)
+            
+                
+             }
+            .FramePadding()
+            .Magenta()
+            .cornerRadius(30)
+            
+            
+        //unknown here is actually default value
         case .unknown:
-            ZStack{
-                Color.blue
-            }
+            VStack {
+                
+                VStack(alignment: .leading,spacing: 0){
+                    Text("WORKING STATUS")
+                        .font(.system(size: 10))
+                      .padding(.bottom, 7)
+
+                    Text("In Office")
+                        .font(.system(size: 24))
+                        .fontWeight(.semibold)
+                        .fixedSize(horizontal: false, vertical: /*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
+           
+                       
+                    Image("Avatar-in-office")
+                        .padding(.top,12)
+                    
+                }
+                .padding(.top,16)
+            
+                
+             }
+            .FramePadding()
+            .Green()
+            .cornerRadius(30)
         }
     }
 }
