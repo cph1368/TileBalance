@@ -87,29 +87,6 @@
 				</dict>
 			</array>
 		</dict>
-		<dict>
-			<key>INEnumDisplayName</key>
-			<string>Enum</string>
-			<key>INEnumDisplayNameID</key>
-			<string>SPx0cv</string>
-			<key>INEnumGeneratesHeader</key>
-			<true/>
-			<key>INEnumName</key>
-			<string>Enum</string>
-			<key>INEnumType</key>
-			<string>Regular</string>
-			<key>INEnumValues</key>
-			<array>
-				<dict>
-					<key>INEnumValueDisplayName</key>
-					<string>unknown</string>
-					<key>INEnumValueDisplayNameID</key>
-					<string>D9L6e0</string>
-					<key>INEnumValueName</key>
-					<string>unknown</string>
-				</dict>
-			</array>
-		</dict>
 	</array>
 	<key>INIntentDefinitionModelVersion</key>
 	<string>1.2</string>
@@ -133,7 +110,7 @@
 			<key>INIntentIneligibleForSuggestions</key>
 			<true/>
 			<key>INIntentLastParameterTag</key>
-			<integer>6</integer>
+			<integer>4</integer>
 			<key>INIntentName</key>
 			<string>Configuration</string>
 			<key>INIntentParameters</key>
@@ -194,7 +171,7 @@
 						</dict>
 					</array>
 					<key>INIntentParameterTag</key>
-					<integer>6</integer>
+					<integer>2</integer>
 					<key>INIntentParameterType</key>
 					<string>Integer</string>
 				</dict>
