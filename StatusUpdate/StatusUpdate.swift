@@ -95,6 +95,7 @@ struct PlaceholderView: View {
 struct SimpleEntry: TimelineEntry {
     let date: Date
     let configuration: ConfigurationIntent
+   // let category: UpdateCategory
 }
 
 struct StatusUpdateEntryView : View {
@@ -102,58 +103,26 @@ struct StatusUpdateEntryView : View {
     let category: Configuration
     
     var body: some View {
-        switch category {
-        case .inoffice:
-            
-            ZStack{
-                Color.blue
-                Text("1234")
-            }
-        
-        case .businesstrip:
-            ZStack{
-                Color.blue
-            }
-        case .remote:
-            ZStack{
-                Color.blue
-            }
-        case .onleave:
-            ZStack{
-                Color.blue
-            }
-        case .sick:
-            ZStack{
-                Color.blue
-            }
-        case .notworking:
-            ZStack{
-                Color.blue
-            }
-        case .unknown:
-            ZStack{
-                Color.blue
-            }
-        }
-         
+        VStack {
+            StatusView(category: entry.configuration.configuration)
         }
     }
-
+}
 struct StatusView: View {
 
     let category: Configuration
-    
+
 
 
     var body: some View {
         switch category {
         case .inoffice:
-            
+
             ZStack{
                 Color.blue
                 Text("1234")
             }
-        
+
         case .businesstrip:
             ZStack{
                 Color.blue
