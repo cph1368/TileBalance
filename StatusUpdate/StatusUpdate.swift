@@ -19,7 +19,7 @@ struct Provider: IntentTimelineProvider {
         let entry = SimpleEntry(date: Date(), configuration: configuration)
         completion(entry)
     }
-    func configuration(for configuration: ConfigurationIntent) -> UpdateCategory{
+    func category(for configuration: ConfigurationIntent) -> UpdateCategory{
         switch configuration.configuration {
         case .inoffice:
             return .inoffice
@@ -98,31 +98,89 @@ struct SimpleEntry: TimelineEntry {
 }
 
 struct StatusUpdateEntryView : View {
-    var entry: Provider.Entry
+   let entry: Provider.Entry
+    let category: Configuration
     
     var body: some View {
-        VStack {
-          
+        switch category {
+        case .inoffice:
+            
+            ZStack{
+                Color.blue
+                Text("1234")
+            }
+        
+        case .businesstrip:
+            ZStack{
+                Color.blue
+            }
+        case .remote:
+            ZStack{
+                Color.blue
+            }
+        case .onleave:
+            ZStack{
+                Color.blue
+            }
+        case .sick:
+            ZStack{
+                Color.blue
+            }
+        case .notworking:
+            ZStack{
+                Color.blue
+            }
+        case .unknown:
+            ZStack{
+                Color.blue
+            }
+        }
+         
+        }
+    }
+
+struct StatusView: View {
+
+    let category: Configuration
+    
+
+
+    var body: some View {
+        switch category {
+        case .inoffice:
+            
+            ZStack{
+                Color.blue
+                Text("1234")
+            }
+        
+        case .businesstrip:
+            ZStack{
+                Color.blue
+            }
+        case .remote:
+            ZStack{
+                Color.blue
+            }
+        case .onleave:
+            ZStack{
+                Color.blue
+            }
+        case .sick:
+            ZStack{
+                Color.blue
+            }
+        case .notworking:
+            ZStack{
+                Color.blue
+            }
+        case .unknown:
+            ZStack{
+                Color.blue
+            }
         }
     }
 }
-
-//struct StatusView: View {
-//
-// let category: ConfigurationIntent
-//
-//    var body: some View {
-//        switch category {
-//
-//        case .inoffice: {
-//            ZStack {
-//                Color.blue.opacity(<#T##opacity: Double##Double#>)
-//            }
-//        }
-//
-//        }
-//    }
-//}
 
 
 @main
@@ -131,16 +189,17 @@ struct StatusUpdate: Widget {
     
     var body: some WidgetConfiguration {
         IntentConfiguration(kind: kind, intent: ConfigurationIntent.self, provider: Provider()) { entry in
-            StatusUpdateEntryView(entry: entry)
+            StatusUpdateEntryView(entry: entry, category: Configuration.inoffice)
         }
         .configurationDisplayName("My Widget")
         .description("This is an example widget.")
     }
 }
 
+
 struct StatusUpdate_Previews: PreviewProvider {
     static var previews: some View {
-        StatusUpdateEntryView(entry: SimpleEntry(date: Date(), configuration: ConfigurationIntent()))
+        StatusUpdateEntryView(entry: SimpleEntry(date: Date(), configuration: ConfigurationIntent()), category: Configuration.inoffice)
             .previewContext(WidgetPreviewContext(family: .systemSmall))
     }
 }
