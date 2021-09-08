@@ -98,14 +98,47 @@ struct SimpleEntry: TimelineEntry {
 }
 
 struct StatusUpdateEntryView : View {
-    var entry: Provider.Entry
+    var entry:  SimpleEntry
+    let category:  Configuration
     
     var body: some View {
-        VStack {
-          
+      
+        switch category {
+        case .inoffice:
+            
+            ZStack{
+                Color.blue
+            }
+        
+        case .businesstrip:
+            ZStack{
+                Color.blue
+            }
+        case .remote:
+            ZStack{
+                Color.blue
+            }
+        case .onleave:
+            ZStack{
+                Color.blue
+            }
+        case .sick:
+            ZStack{
+                Color.blue
+            }
+        case .notworking:
+            ZStack{
+                Color.blue
+            }
+        case .unknown:
+            ZStack{
+                Color.blue
+            }
         }
     }
 }
+    
+
 
 //struct StatusView: View {
 //
@@ -131,7 +164,7 @@ struct StatusUpdate: Widget {
     
     var body: some WidgetConfiguration {
         IntentConfiguration(kind: kind, intent: ConfigurationIntent.self, provider: Provider()) { entry in
-            StatusUpdateEntryView(entry: entry)
+            StatusUpdateEntryView(entry: entry, category: Configuration.inoffice)
         }
         .configurationDisplayName("My Widget")
         .description("This is an example widget.")
@@ -140,7 +173,7 @@ struct StatusUpdate: Widget {
 
 struct StatusUpdate_Previews: PreviewProvider {
     static var previews: some View {
-        StatusUpdateEntryView(entry: SimpleEntry(date: Date(), configuration: ConfigurationIntent()))
+        StatusUpdateEntryView(entry: SimpleEntry(date: Date(), configuration: ConfigurationIntent()), category: Configuration.inoffice)
             .previewContext(WidgetPreviewContext(family: .systemSmall))
     }
 }
