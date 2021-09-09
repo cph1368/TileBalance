@@ -106,9 +106,10 @@ struct StatusUpdateEntryView : View {
     let category: Configuration
     
     var body: some View {
-        VStack {
+        ZStack {
             StatusView(category: entry.configuration.configuration)
         }
+    
     }
 }
 struct StatusView: View {
@@ -119,8 +120,6 @@ struct StatusView: View {
         switch category {
         case .inoffice:
 
-            VStack{
-                
                 VStack(alignment: .leading,spacing: 0) {
                     Text("WORKING STATUS")
                         .font(.system(size: 10))
@@ -136,17 +135,13 @@ struct StatusView: View {
                         .padding(.top,12)
                     
                 }
-                .padding(.top,16)
-             }
-            //.frame(width: 155, height: 155, alignment: .leading)
-           // .padding()
-            .FramePadding()
-            .Cyan()
-            .cornerRadius(30)
+                .FramePadding()
+                .Cyan()
+          
+          
 
         case .businesstrip:
-            VStack{
-                
+     
                 VStack(alignment: .leading,spacing: 0) {
                     Text("WORKING STATUS")
                         .font(.system(size: 10))
@@ -163,15 +158,10 @@ struct StatusView: View {
                     
                 }
                 .padding(.top,16)
-            
-                
-             }
-            .FramePadding()
-            .Cyan()
-            .cornerRadius(30)
-           
+                .FramePadding()
+                .Cyan()
+   
         case .remote:
-            VStack {
                 
                 VStack(alignment: .leading,spacing: 0){
                     Text("WORKING STATUS")
@@ -187,16 +177,12 @@ struct StatusView: View {
                         .padding(.top,12)
                     
                 }
-                .padding(.top,16)
+                .FramePadding()
+                .Blue()
+
             
-                
-             }
-            .FramePadding()
-            .Blue()
-            .cornerRadius(30)
             
         case .onleave:
-            VStack{
                 
                 VStack(alignment: .leading,spacing: 0){
                     Text("WORKING STATUS")
@@ -213,16 +199,13 @@ struct StatusView: View {
                     
                 }
                 .padding(.top,16)
-            
+                .FramePadding()
+                .Black()
                 
-             }
-            .FramePadding()
-            .Black()
-            .cornerRadius(30)
+       
             
         case .sick:
-            VStack{
-                
+    
                 VStack(alignment: .leading,spacing: 0){
                     Text("WORKING STATUS")
                         .font(.system(size: 10))
@@ -238,15 +221,12 @@ struct StatusView: View {
                     
                 }
                 .padding(.top,16)
-            
+                .FramePadding()
+                .Peach()
                 
-             }
-            .FramePadding()
-            .Peach()
-            .cornerRadius(30)
+   
             
         case .notworking:
-            VStack{
                 
                 VStack(alignment: .leading,spacing: 0){
                     Text("WORKING STATUS")
@@ -262,19 +242,15 @@ struct StatusView: View {
                         .padding(.top,12)
                     
                 }
-                .padding(.top,16)
+                .FramePadding()
+                .Magenta()
             
-                
-             }
-            .FramePadding()
-            .Magenta()
-            .cornerRadius(30)
+        
             
             
         //unknown here is actually default value
         case .unknown:
-            VStack {
-                
+          
                 VStack(alignment: .leading,spacing: 0){
                     Text("WORKING STATUS")
                         .font(.system(size: 10))
@@ -290,13 +266,10 @@ struct StatusView: View {
                         .padding(.top,12)
                     
                 }
-                .padding(.top,16)
-            
+                .FramePadding()
+                .Green()
                 
-             }
-            .FramePadding()
-            .Green()
-            .cornerRadius(30)
+            
         }
     }
 }
