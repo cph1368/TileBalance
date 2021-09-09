@@ -330,8 +330,8 @@ struct StatusUpdate: Widget {
             
            
         }
-        .configurationDisplayName("My Widget")
-        .description("This is an example widget.")
+        .configurationDisplayName("SmartApp Staff Update")
+        .description("Update Your Status")
     }
 }
 
