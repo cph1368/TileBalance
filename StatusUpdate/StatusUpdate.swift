@@ -135,31 +135,30 @@ struct StatusView: View {
         switch category {
         case .inoffice:
 
-            VStack {
+            VStack{
                 
-                VStack(alignment: .leading,spacing: 0){
+                VStack(alignment: .leading,spacing: 0) {
                     Text("WORKING STATUS")
                         .font(.system(size: 10))
                       .padding(.bottom, 7)
 
-                    Text("In Office")
+                    Text("Business Trip")
                         .font(.system(size: 24))
                         .fontWeight(.semibold)
                         .fixedSize(horizontal: false, vertical: /*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
            
                        
-                    Image("Avatar-in-office")
+                    Image("Avatar-business-trip")
                         .padding(.top,12)
                     
                 }
                 .padding(.top,16)
-            
-                
              }
+            //.frame(width: 155, height: 155, alignment: .leading)
+           // .padding()
             .FramePadding()
-            .Green()
+            .Cyan()
             .cornerRadius(30)
-            
 
         case .businesstrip:
             VStack{
@@ -314,7 +313,6 @@ struct StatusView: View {
             .FramePadding()
             .Green()
             .cornerRadius(30)
-            
         }
     }
 }
