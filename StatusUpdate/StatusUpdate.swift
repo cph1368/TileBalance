@@ -121,71 +121,84 @@ struct StatusView: View {
         switch category {
         case .inoffice:
 
-                VStack(alignment: .leading,spacing: 0) {
+            VStack(alignment: .leading,spacing: 0){
+                VStack(alignment: .leading){
                     Text("WORKING STATUS")
                         .font(.system(size: 10))
-                      .padding(.bottom, 7)
+                      .padding(.bottom, 20)
+                     
 
-                    Text("Business Trip")
+                    Text("In Office")
                         .font(.system(size: 24))
                         .fontWeight(.semibold)
                         .fixedSize(horizontal: false, vertical: /*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
+                        
            
                        
-                    Image("Avatar-business-trip")
+                    Image("Avatar-in-office")
                         .padding(.top,12)
                     
                 }
-                .FramePadding()
-                .Cyan()
+                .padding()
+            }
+            .FramePadding()
+            .Green()
           
           
 
         case .businesstrip:
-     
-                VStack(alignment: .leading,spacing: 0) {
+            
+            VStack(alignment: .leading,spacing: 0) {
+                Text("WORKING STATUS")
+                    .font(.system(size: 10))
+                  .padding(.bottom, 7)
+
+                Text("Business Trip")
+                    .font(.system(size: 24))
+                    .fontWeight(.semibold)
+                    .fixedSize(horizontal: false, vertical: /*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
+       
+                   
+                Image("Avatar-business-trip")
+                    .padding(.top,12)
+                
+            }
+            .padding()
+            .FramePadding()
+            .Cyan()
+   
+        case .remote:
+                
+            VStack(alignment: .leading,spacing: 0){
+                VStack(alignment: .leading){
                     Text("WORKING STATUS")
                         .font(.system(size: 10))
                       .padding(.bottom, 7)
 
-                    Text("Business Trip")
-                        .font(.system(size: 24))
-                        .fontWeight(.semibold)
-                        .fixedSize(horizontal: false, vertical: /*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
-           
-                       
-                    Image("Avatar-business-trip")
-                        .padding(.top,12)
-                    
-                }
-                .padding(.top,16)
-                .FramePadding()
-                .Cyan()
-   
-        case .remote:
-                
-                VStack(alignment: .leading,spacing: 0){
-                    Text("WORKING STATUS")
-                        .font(.system(size: 10))
-                      .padding(.bottom, 7)
 
                     Text("Remote")
                         .font(.system(size: 24))
                         .fontWeight(.semibold)
                         .fixedSize(horizontal: false, vertical: /*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
-           
+
+
+
                     Image("Avatar-remote")
                         .padding(.top,12)
-                    
+
                 }
-                .FramePadding()
-                .Blue()
+                .padding()
+            }
+
+            .FramePadding()
+            .Blue()
 
             
             
         case .onleave:
                 
-                VStack(alignment: .leading,spacing: 0){
+            VStack(alignment: .leading,spacing: 0){
+                VStack(alignment: .leading){
                     Text("WORKING STATUS")
                         .font(.system(size: 10))
                       .padding(.bottom, 7)
@@ -194,87 +207,97 @@ struct StatusView: View {
                         .font(.system(size: 24))
                         .fontWeight(.semibold)
                         .fixedSize(horizontal: false, vertical: /*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
-           
+
                     Image("Avatar-on-leave")
                         .padding(.top,12)
-                    
                 }
-                .padding(.top,16)
-                .FramePadding()
-                .Black()
+                .padding()
+            }
+
+            .FramePadding()
+            .Black()
+        
                 
        
             
         case .sick:
     
-                VStack(alignment: .leading,spacing: 0){
+            VStack(alignment: .leading,spacing: 0){
+                VStack(alignment: .leading){
                     Text("WORKING STATUS")
                         .font(.system(size: 10))
                       .padding(.bottom, 7)
+
 
                     Text("Sick")
                         .font(.system(size: 24))
                         .fontWeight(.semibold)
                         .fixedSize(horizontal: false, vertical: /*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
-           
+
+
+
                     Image("Avatar-sick")
                         .padding(.top,12)
-                    
+
                 }
-                .padding(.top,16)
-                .FramePadding()
-                .Peach()
-                
+                .padding()
+
+            }
+
+            .FramePadding()
+            .Peach()
+        
    
             
         case .notworking:
                 
-                VStack(alignment: .leading,spacing: 0){
-                    Text("WORKING STATUS")
-                        .font(.system(size: 10))
-                      .padding(.bottom, 7)
+            VStack(alignment: .leading,spacing: 0){
+                Text("WORKING STATUS")
+                    .font(.system(size: 10))
+                  .padding(.bottom, 7)
 
-                    Text("Not working")
-                        .font(.system(size: 24))
-                        .fontWeight(.semibold)
-                        .fixedSize(horizontal: false, vertical: /*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
-           
-                    Image("Avatar-not-working")
-                        .padding(.top,12)
-                    
-                }
-                .FramePadding()
-                .Magenta()
+                Text("Not working")
+                    .font(.system(size: 24))
+                    .fontWeight(.semibold)
+                    .fixedSize(horizontal: false, vertical: /*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
+       
+                Image("Avatar-not-working")
+                    .padding(.top,12)
+                
+            }
+            .padding()
+            .FramePadding()
+            .Magenta()
             
         
             
             
         //unknown = 0
         // inoffice = 1
+        // to adjust rendering widget here
         case .unknown:
-          
+            
                 VStack(alignment: .leading,spacing: 0){
                     VStack(alignment: .leading){
                         Text("WORKING STATUS")
                             .font(.system(size: 10))
-                          .padding(.bottom, 20)
-                         
+                          .padding(.bottom, 7)
 
-                        Text("In Office")
+
+                        Text("Remote")
                             .font(.system(size: 24))
                             .fontWeight(.semibold)
                             .fixedSize(horizontal: false, vertical: /*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
-                            
-               
-                           
-                        Image("Avatar-in-office")
+
+                        Image("Avatar-remote")
                             .padding(.top,12)
-                        
+
                     }
                     .padding()
                 }
+
                 .FramePadding()
-                .Green()
+                .Blue()
             
                 
             
