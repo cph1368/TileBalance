@@ -170,7 +170,6 @@ struct StatusView: View {
    
         case .remote:
                 
-            
                 VStack(alignment: .leading,spacing: 0){
                     VStack(alignment: .leading){
                         Text("WORKING STATUS")
