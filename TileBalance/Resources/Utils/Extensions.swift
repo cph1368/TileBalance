@@ -42,5 +42,6 @@ extension View {
     func FramePadding() -> some View {
         self.frame(width: 155, height: 155, alignment: .leading)
             .padding()
+            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .leading)
     }
 }

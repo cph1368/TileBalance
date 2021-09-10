@@ -106,10 +106,10 @@ struct StatusUpdateEntryView : View {
     let category: Configuration
     
     var body: some View {
-        VStack {
+        VStack() {
             StatusView(category: entry.configuration.configuration)
         }
-        .padding()
+        //.padding()
     
     }
 }
@@ -142,6 +142,7 @@ struct StatusView: View {
                 .padding()
             }
             .FramePadding()
+            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .leading)
             .Green()
           
           
@@ -169,30 +170,28 @@ struct StatusView: View {
    
         case .remote:
                 
-            VStack(alignment: .leading,spacing: 0){
-                VStack(alignment: .leading){
-                    Text("WORKING STATUS")
-                        .font(.system(size: 10))
-                      .padding(.bottom, 7)
+            
+                VStack(alignment: .leading,spacing: 0){
+                    VStack(alignment: .leading){
+                        Text("WORKING STATUS")
+                          .font(.system(size: 10))
+                          .padding(.bottom, 7)
 
 
-                    Text("Remote")
-                        .font(.system(size: 24))
-                        .fontWeight(.semibold)
-                        .fixedSize(horizontal: false, vertical: /*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
+                        Text("Remote")
+                            .font(.system(size: 24))
+                            .fontWeight(.semibold)
+                            .fixedSize(horizontal: false, vertical: /*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
 
+                        Image("Avatar-remote")
+                            .padding(.top,12)
 
-
-                    Image("Avatar-remote")
-                        .padding(.top,12)
-
+                    }
+                    .padding()
                 }
-                .padding()
-            }
-
-            .FramePadding()
-            .Blue()
-
+                .FramePadding()
+                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .leading)
+                .Blue()
             
             
         case .onleave:
@@ -213,13 +212,10 @@ struct StatusView: View {
                 }
                 .padding()
             }
-
             .FramePadding()
+            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .leading)
             .Black()
-        
-                
-       
-            
+
         case .sick:
     
             VStack(alignment: .leading,spacing: 0){
@@ -243,8 +239,8 @@ struct StatusView: View {
                 .padding()
 
             }
-
             .FramePadding()
+            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .leading)
             .Peach()
         
    
@@ -269,7 +265,6 @@ struct StatusView: View {
             .FramePadding()
             .Magenta()
             
-        
             
             
         //unknown = 0
@@ -277,30 +272,32 @@ struct StatusView: View {
         // to adjust rendering widget here
         case .unknown:
             
-                VStack(alignment: .leading,spacing: 0){
-                    VStack(alignment: .leading){
-                        Text("WORKING STATUS")
-                          .font(.system(size: 10))
-                          .padding(.bottom, 7)
+            VStack(alignment: .leading,spacing: 0){
+                VStack(alignment: .leading){
+                    Text("WORKING STATUS")
+                      .font(.system(size: 10))
+                      .padding(.bottom, 7)
 
 
-                        Text("Remote")
-                            .font(.system(size: 24))
-                            .fontWeight(.semibold)
-                            .fixedSize(horizontal: false, vertical: /*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
+                    Text("Remote")
+                        .font(.system(size: 24))
+                        .fontWeight(.semibold)
+                        .fixedSize(horizontal: false, vertical: /*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
 
-                        Image("Avatar-remote")
-                            .padding(.top,12)
+                    Image("Avatar-remote")
+                        .padding(.top,12)
 
-                    }
-                    .padding()
                 }
-
-                .FramePadding()
-                .Blue()
-            
-                
-            
+                .padding()
+            }
+            .FramePadding()
+            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .leading)
+            //this needs to be added to support bigger frame for certain layouts, not all
+            .Blue()
+        
+          
+        
+        
         }
     }
 }
@@ -324,6 +321,10 @@ struct StatusUpdate_Previews: PreviewProvider {
     static var previews: some View {
         StatusUpdateEntryView(entry: SimpleEntry(date: Date(), configuration: ConfigurationIntent()), category: Configuration.inoffice)
             .previewContext(WidgetPreviewContext(family: .systemSmall))
+        StatusUpdateEntryView(entry: SimpleEntry(date: Date(), configuration: ConfigurationIntent()), category: Configuration.inoffice)
+            .previewContext(WidgetPreviewContext(family: .systemMedium))
+        StatusUpdateEntryView(entry: SimpleEntry(date: Date(), configuration: ConfigurationIntent()), category: Configuration.inoffice)
+            .previewContext(WidgetPreviewContext(family: .systemLarge))
     }
     
 }
