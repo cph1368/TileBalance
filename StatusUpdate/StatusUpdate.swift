@@ -327,3 +327,7 @@ struct StatusUpdate_Previews: PreviewProvider {
     }
     
 }
+
+
+// Changing Widget Configuration
+// Accent color + Widget BgColor
