@@ -125,7 +125,7 @@ struct StatusView: View {
                 VStack(alignment: .leading){
                     Text("WORKING STATUS")
                         .font(.system(size: 10))
-                      .padding(.bottom, 20)
+                      .padding(.bottom, 7)
                      
 
                     Text("In Office")
@@ -271,32 +271,30 @@ struct StatusView: View {
         // inoffice = 1
         // to adjust rendering widget here
         case .unknown:
-            
             VStack(alignment: .leading,spacing: 0){
                 VStack(alignment: .leading){
                     Text("WORKING STATUS")
-                      .font(.system(size: 10))
+                        .font(.system(size: 10))
                       .padding(.bottom, 7)
+                     
 
-
-                    Text("Remote")
+                    Text("In Office")
                         .font(.system(size: 24))
                         .fontWeight(.semibold)
                         .fixedSize(horizontal: false, vertical: /*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
-
-                    Image("Avatar-remote")
+                        
+           
+                       
+                    Image("Avatar-in-office")
                         .padding(.top,12)
-
+                    
                 }
                 .padding()
             }
             .FramePadding()
             .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .leading)
             //this needs to be added to support bigger frame for certain layouts, not all
-            .Blue()
-        
-          
-        
+            .Green()
         
         }
     }
