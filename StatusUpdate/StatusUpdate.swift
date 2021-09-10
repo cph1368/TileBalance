@@ -9,6 +9,8 @@
 
 // USING TARGET MEMBERSHIP - to share files ( only one side is required, not the widget side)
 
+// Reference - https://developer.apple.com/videos/play/wwdc2020/10194/
+
 import WidgetKit
 import SwiftUI
 import Intents
