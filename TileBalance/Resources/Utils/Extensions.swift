@@ -44,4 +44,9 @@ extension View {
             .padding()
             .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .leading)
     }
+    func FramePadding2() -> some View {
+        self.frame(width: 155, height: 155, alignment: .leading)
+            .padding()
+           // .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .leading)
+    }
 }

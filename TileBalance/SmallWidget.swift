@@ -35,7 +35,7 @@ struct SmallWidget: View {
              }
             //.frame(width: 155, height: 155, alignment: .leading)
            // .padding()
-            .FramePadding()
+            .FramePadding2()
             .Cyan()
             .cornerRadius(30)
            
@@ -60,7 +60,7 @@ struct SmallWidget: View {
             
                 
              }
-            .FramePadding()
+            .FramePadding2()
             .Green()
             .cornerRadius(30)
             
@@ -84,7 +84,7 @@ struct SmallWidget: View {
             
                 
              }
-            .FramePadding()
+            .FramePadding2()
             .Blue()
             .cornerRadius(30)
             
@@ -108,7 +108,7 @@ struct SmallWidget: View {
             
                 
              }
-            .FramePadding()
+            .FramePadding2()
             .Black()
             .cornerRadius(30)
             
@@ -132,7 +132,7 @@ struct SmallWidget: View {
             
                 
              }
-            .FramePadding()
+            .FramePadding2()
             .Peach()
             .cornerRadius(30)
             
@@ -157,7 +157,7 @@ struct SmallWidget: View {
             
                 
              }
-            .FramePadding()
+            .FramePadding2()
             .Magenta()
             .cornerRadius(30)
         }
