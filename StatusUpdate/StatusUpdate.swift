@@ -106,9 +106,10 @@ struct StatusUpdateEntryView : View {
     let category: Configuration
     
     var body: some View {
-        ZStack {
+        VStack {
             StatusView(category: entry.configuration.configuration)
         }
+        .padding()
     
     }
 }
@@ -252,22 +253,28 @@ struct StatusView: View {
         case .unknown:
           
                 VStack(alignment: .leading,spacing: 0){
-                    Text("WORKING STATUS")
-                        .font(.system(size: 10))
-                      .padding(.bottom, 7)
+                    VStack(alignment: .leading){
+                        Text("WORKING STATUS")
+                            .font(.system(size: 10))
+                          .padding(.bottom, 20)
+                         
 
-                    Text("In Office")
-                        .font(.system(size: 24))
-                        .fontWeight(.semibold)
-                        .fixedSize(horizontal: false, vertical: /*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
-           
-                       
-                    Image("Avatar-in-office")
-                        .padding(.top,12)
-                    
+                        Text("In Office")
+                            .font(.system(size: 24))
+                            .fontWeight(.semibold)
+                            .fixedSize(horizontal: false, vertical: /*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
+                            
+               
+                           
+                        Image("Avatar-in-office")
+                            .padding(.top,12)
+                        
+                    }
+                    .padding()
                 }
                 .FramePadding()
                 .Green()
+            
                 
             
         }
@@ -294,4 +301,5 @@ struct StatusUpdate_Previews: PreviewProvider {
         StatusUpdateEntryView(entry: SimpleEntry(date: Date(), configuration: ConfigurationIntent()), category: Configuration.inoffice)
             .previewContext(WidgetPreviewContext(family: .systemSmall))
     }
+    
 }
