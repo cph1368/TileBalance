@@ -280,7 +280,7 @@ struct StatusView: View {
                 VStack(alignment: .leading,spacing: 0){
                     VStack(alignment: .leading){
                         Text("WORKING STATUS")
-                            .font(.system(size: 10))
+                          .font(.system(size: 10))
                           .padding(.bottom, 7)
 
 
@@ -314,8 +314,8 @@ struct StatusUpdate: Widget {
         IntentConfiguration(kind: kind, intent: ConfigurationIntent.self, provider: Provider()) { entry in
             StatusUpdateEntryView(entry: entry, category: Configuration.inoffice)
         }
-        .configurationDisplayName("My Widget")
-        .description("This is an example widget.")
+        .configurationDisplayName("Smart App Widget")
+        .description("Update Your Status")
     }
 }
 
