@@ -249,7 +249,8 @@ struct StatusView: View {
         
             
             
-        //unknown here is actually default value
+        //unknown = 0
+        // inoffice = 1
         case .unknown:
           
                 VStack(alignment: .leading,spacing: 0){
