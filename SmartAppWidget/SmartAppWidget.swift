@@ -94,8 +94,8 @@ struct SmartAppWidget: Widget {
         StaticConfiguration(kind: kind, provider: Provider()) { entry in
             SmartAppWidgetEntryView(entry: entry)
         }
-        .configurationDisplayName("My Widget")
-        .description("This is an example widget.")
+        .configurationDisplayName("SmartAppWidget")
+        .description("Choose Your Status Here")
     }
 }
 
