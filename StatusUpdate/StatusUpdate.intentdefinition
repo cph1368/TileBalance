@@ -27,7 +27,7 @@
 				</dict>
 				<dict>
 					<key>INEnumValueDisplayName</key>
-					<string>In Office</string>
+					<string>inoffice</string>
 					<key>INEnumValueDisplayNameID</key>
 					<string>traTsD</string>
 					<key>INEnumValueIndex</key>
@@ -37,7 +37,7 @@
 				</dict>
 				<dict>
 					<key>INEnumValueDisplayName</key>
-					<string>Business Trip</string>
+					<string>businesstrip</string>
 					<key>INEnumValueDisplayNameID</key>
 					<string>7jNBgk</string>
 					<key>INEnumValueIndex</key>
@@ -47,7 +47,7 @@
 				</dict>
 				<dict>
 					<key>INEnumValueDisplayName</key>
-					<string>Working Remotely</string>
+					<string>remote</string>
 					<key>INEnumValueDisplayNameID</key>
 					<string>M8RUo9</string>
 					<key>INEnumValueIndex</key>
@@ -57,7 +57,7 @@
 				</dict>
 				<dict>
 					<key>INEnumValueDisplayName</key>
-					<string>On Leave</string>
+					<string>onleave</string>
 					<key>INEnumValueDisplayNameID</key>
 					<string>2McsPO</string>
 					<key>INEnumValueIndex</key>
@@ -67,7 +67,7 @@
 				</dict>
 				<dict>
 					<key>INEnumValueDisplayName</key>
-					<string>Sick</string>
+					<string>sick</string>
 					<key>INEnumValueDisplayNameID</key>
 					<string>aJgZAb</string>
 					<key>INEnumValueIndex</key>
@@ -77,7 +77,7 @@
 				</dict>
 				<dict>
 					<key>INEnumValueDisplayName</key>
-					<string>Not Working</string>
+					<string>notworking</string>
 					<key>INEnumValueDisplayNameID</key>
 					<string>vhkMvp</string>
 					<key>INEnumValueIndex</key>
